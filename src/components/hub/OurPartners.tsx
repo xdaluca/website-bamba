@@ -37,9 +37,9 @@ const OurPartners = () => {
               <Image
                 src={item}
                 alt={`Partner ${index + 1}`}
-                width={142}
-                height={142}
-                className={`h-auto w-full max-w-[142px] object-contain transition duration-300 ease-in-out group-hover:invert hover:scale-105`}
+                width={130}
+                height={56}
+                className={`h-auto max-w-[160px] object-contain transition duration-300 ease-in-out group-hover:invert hover:scale-105`}
               />
             </div>
           ))}
