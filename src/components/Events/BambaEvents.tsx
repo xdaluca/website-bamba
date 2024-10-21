@@ -33,7 +33,7 @@ const BambaEvents = () => {
               {item.description}
             </p>
           </div>
-          <div className="flex justify-center p-2 bg-rich-black text-very-light-gray rounded-full md:w-[166px] w-full">
+          <div className="flex justify-center p-2 bg-rich-black text-very-light-gray rounded-full md:w-[166px] w-full transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
             <Link href={item.link}>{item.btn}</Link>
           </div>
         </div>
