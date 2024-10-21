@@ -178,60 +178,68 @@ const Template: FC<TemplateProps> = ({ children }) => {
                 type="button"
                 className="inline-flex items-center rounded-lg font-semibold p-2 text-sm md:hidden"
               >
-                {!isSidebarOpen ? (
-                  <svg
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4 12.0938H20"
-                      stroke="#171717"
-                      stroke-width="1.25"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M4 6.09375H20"
-                      stroke="#171717"
-                      stroke-width="1.25"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M4 18.0938H20"
-                      stroke="#171717"
-                      stroke-width="1.25"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    width="24"
-                    height="25"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M24 8L8 24"
-                      stroke="#171717"
-                      stroke-width="1.25"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M8 8L24 24"
-                      stroke="#171717"
-                      stroke-width="1.25"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                )}
+                <div>
+                  {!isSidebarOpen ? (
+                    <svg
+                      className={`transition-transform duration-300 ease-in-out ${
+                        isSidebarOpen ? "rotate-180" : ""
+                      }`}
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 12.0938H20"
+                        stroke="#171717"
+                        strokeWidth="1.25"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M4 6.09375H20"
+                        stroke="#171717"
+                        strokeWidth="1.25"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M4 18.0938H20"
+                        stroke="#171717"
+                        strokeWidth="1.25"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      className={`transition-transform duration-300 ease-in-out ${
+                        isSidebarOpen ? "rotate-180" : ""
+                      }`}
+                      width="24"
+                      height="25"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24 8L8 24"
+                        stroke="#171717"
+                        strokeWidth="1.25"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M8 8L24 24"
+                        stroke="#171717"
+                        strokeWidth="1.25"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  )}
+                </div>
               </button>
             </div>
           </div>
