@@ -9,7 +9,7 @@ interface TemplateProps {
   children: ReactNode;
 }
 const Template: FC<TemplateProps> = ({ children }) => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -245,7 +245,7 @@ const Template: FC<TemplateProps> = ({ children }) => {
         } `}
         aria-label="Sidebar"
       >
-        <div className="h-full px-3 pb-4 gap-4 space-y-5">
+        <div className="h-full px-6 py-6 gap-6 flex flex-col ">
           {menu.map((item) => (
             <Link
               key={item.name}
