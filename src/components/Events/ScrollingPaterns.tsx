@@ -20,7 +20,7 @@ const ScrollingPatterns = () => {
     const scrollContainer = scrollRef.current;
 
     const startScrolling = () => {
-      let step = 1;
+      const step = 1;
       const scroll = () => {
         if (
           scrollContainer &&
