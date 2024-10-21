@@ -37,9 +37,9 @@ const AboutBambaEvents = () => {
         <div className="gap-4 flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center items-center gap-2">
             <p className="text-light-gray text-sm">About Bamba Events</p>
-            <p className="text-very-light-gray text-3xl font-semibold">
+            <h2 className="text-very-light-gray text-3xl font-semibold">
               Chainlink, The Graph and Arbitrum
-            </p>
+            </h2>
           </div>
           <p className="leading-6 text-light-gray md:w-[664px]">
             Bamba Labs is your go-to ecosystem with coworking, an agency,

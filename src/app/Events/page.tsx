@@ -7,6 +7,10 @@ import {
   Template,
 } from "@/components/Events";
 
+export const metadata = {
+  title: "Bamba Labs | Events",
+  description: "Events",
+};
 const Events = () => {
   return (
     <Template>

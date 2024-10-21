@@ -19,25 +19,19 @@ const ScrollingPatterns = () => {
   useEffect(() => {
     const scrollContainer = scrollRef.current;
 
-    const startScrolling = () => {
-      const step = 1;
-      const scroll = () => {
-        if (
-          scrollContainer &&
-          scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2
-        ) {
+    const step = 1;
+    const scroll = () => {
+      if (scrollContainer) {
+        if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
           scrollContainer.scrollLeft = 0;
         } else {
-          scrollContainer && (scrollContainer.scrollLeft += step);
+          scrollContainer.scrollLeft += step;
         }
-      };
-
-      const intervalId = setInterval(scroll, 20);
-      return () => clearInterval(intervalId);
+      }
     };
 
-    const stopScrolling = startScrolling();
-    return stopScrolling;
+    const intervalId = setInterval(scroll, 20);
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
