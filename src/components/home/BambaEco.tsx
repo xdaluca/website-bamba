@@ -9,7 +9,7 @@ const data = [
     title: "Events",
     description:
       "Hackathons and meetups that accelerate ideas and connect innovative minds to create solutions ecosystem.",
-    bg: "bg-[#007AFF]",
+    bg: "bg-azure",
   },
   {
     title: "Builders",
@@ -21,7 +21,7 @@ const data = [
     title: "Studio",
     description:
       "We empower startups with strategic and development, helping them grow in the crypto and tech landscape.",
-    bg: "bg-[#007AFF]",
+    bg: "bg-azure",
   },
 ];
 
@@ -29,12 +29,12 @@ const BambaEco = () => {
   return (
     <div className="w-full flex justify-center items-center px-6">
       <div
-        className="max-w-7xl mx-auto flex flex-col items-center justify-center bg-[#171717] px-6 gap-8 rounded-2xl py-20"
+        className="max-w-7xl mx-auto flex flex-col items-center justify-center bg-rich-black px-6 gap-8 rounded-2xl py-20"
         style={{ boxShadow: "0px -40px 160px 0px #007AFF29" }}
       >
         <div className="gap-2">
-          <p className="text-[#007AFF] text-sm text-center">Bamba Ecossystem</p>
-          <p className="text-center text-[#FCFCFC] font-semibold text-2xl leading-8">
+          <p className="text-azure text-sm text-center">Bamba Ecossystem</p>
+          <p className="text-center text-very-light-gray font-semibold text-2xl leading-8">
             Our Ecosystem: Innovation, <br className="hidden md:flex" />{" "}
             Technology and Collaboration
           </p>
@@ -43,7 +43,7 @@ const BambaEco = () => {
           {data.map((item) => (
             <div
               key={item.title}
-              className={`flex flex-col justify-center w-full md:w-[calc(50%-20px)] h-[304px] md:h-[228px] ${item.bg} p-6 gap-6 rounded-2xl text-black`}
+              className={`flex flex-col justify-center w-full md:w-[calc(50%-20px)] h-[304px] md:h-[228px] ${item.bg} p-6 gap-6 rounded-2xl text-rich-black transition duration-300 ease-in-out hover:scale-105`}
             >
               <div className="gap-4">
                 <div className="flex flex-row space-x-2 mb-5">
@@ -84,7 +84,7 @@ const BambaEco = () => {
                 <p className="leading-6">{item.description}</p>
               </div>
 
-              <div className="self-end w-full md:w-[151px] flex justify-center p-2 bg-[#171717] text-white rounded-full">
+              <div className="self-end w-full md:w-[151px] flex justify-center p-2 bg-rich-black text-very-light-gray rounded-full">
                 <p>Learn More</p>
               </div>
             </div>

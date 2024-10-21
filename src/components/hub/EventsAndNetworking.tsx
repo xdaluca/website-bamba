@@ -35,17 +35,17 @@ const data = [
 
 const EventsAndNetworking = () => {
   return (
-    <div className="bg-[#171717]">
+    <div className="bg-rich-black">
       <div className="max-w-7xl mx-auto w-full xl:px-0 py-20 ">
         <div className="flex flex-col gap-16 px-6 rounded-2xl text-center md:text-left py-20">
           <div className="flex-1 gap-4 flex flex-col justify-center">
             <div className="gap-2">
-              <p className="text-sm text-[#DBDBDB]">About Bamba Hub</p>
+              <p className="text-sm text-light-gray">About Bamba Hub</p>
               <h3 className="text-2xl font-semibold leading-8 text-[#F6F7F6]">
                 Events and Networking
               </h3>
             </div>
-            <p className="text-[#DBDBDB] gap-6">
+            <p className="text-light-gray">
               At Bamba Labs, we promote a constant schedule of events, meetups
               and workshops focused on the tech and Web3 ecosystem. In addition,
               we have flexible and modern spaces for those who want to hold
@@ -63,7 +63,7 @@ const EventsAndNetworking = () => {
             {data.map((event, index) => (
               <div
                 key={index}
-                className="bg-[#FCFCFC] rounded-lg flex-shrink-0"
+                className="bg-very-light-gray rounded-lg flex-shrink-0"
                 style={{
                   minWidth: "280px",
                   maxWidth: "300px",
@@ -76,19 +76,19 @@ const EventsAndNetworking = () => {
                   className="w-full h-[200px] object-cover rounded-t-lg"
                 />
                 <div className="p-4">
-                  <div className="text-[#171717] font-semibold text-sm">
+                  <div className="text-rich-black font-semibold text-sm">
                     {event.month} {event.day}
                   </div>
-                  <p className="text-[#171717] text-lg font-semibold">
+                  <p className="text-rich-black text-lg font-semibold">
                     {event.title}
                   </p>
-                  <p className="text-[#171717] text-sm">{event.describe}</p>
+                  <p className="text-rich-black text-sm">{event.describe}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="w-[193px] self-center bg-[#FCFCFC] text-[#171717] rounded-full h-[48px] flex justify-center items-center">
+          <div className="w-[193px] self-center bg-very-light-gray text-rich-black rounded-full h-[48px] flex justify-center items-center">
             <p>See More Events</p>
           </div>
         </div>

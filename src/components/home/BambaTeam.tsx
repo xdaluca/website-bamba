@@ -28,15 +28,15 @@ const data = [
 const BambaTeam = () => {
   return (
     <div className="max-w-7xl mx-auto w-full xl:px-0 px-6 mb-[450px]">
-      <div className="flex flex-col md:flex-row gap-16 px-6 bg-[#171717] rounded-2xl text-center md:text-left py-20">
+      <div className="flex flex-col md:flex-row gap-16 px-6 bg-rich-black rounded-2xl text-center md:text-left py-20">
         <div className="flex-1 gap-4 flex flex-col justify-center">
           <div className="gap-2">
-            <p className="text-sm text-[#DBDBDB]">Bamba Team</p>
+            <p className="text-sm text-light-gray">Bamba Team</p>
             <h3 className="text-2xl font-semibold leading-8 text-[#F6F7F6]">
               Bamba Team: Innovation in every detail
             </h3>
           </div>
-          <p className="text-[#DBDBDB] gap-6">
+          <p className="text-light-gray gap-6">
             Meet the visionaries leading Bamba Labs. With a unique blend of
             experience and passion, our leadership team is shaping the future of
             innovation and technology, driving the transformation of Rio de
@@ -60,7 +60,7 @@ const BambaTeam = () => {
               <h4 className="text-lg font-semibold text-[#F6F7F6]">
                 {member.name}
               </h4>
-              <p className="text-[#DBDBDB]">{member.position}</p>
+              <p className="text-light-gray">{member.position}</p>
             </div>
           ))}
         </div>

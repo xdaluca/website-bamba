@@ -1,5 +1,4 @@
-"use client"; // Adicione esta linha no topo do arquivo
-
+"use client";
 import { useState } from "react";
 
 const data = [
@@ -65,13 +64,13 @@ const MembershipPlans = () => {
   return (
     <div className="flex justify-center flex-col items-center py-20 gap-4 text-center max-w-7xl w-full mx-auto px-6 xl:px-0">
       <div>
-        <p className="text-sm text-[#6F6F6F] text-center mb-4">
+        <p className="text-sm text-dim-gray text-center mb-4">
           About Bamba Hub
         </p>
-        <p className="text-[#171717] text-3xl font-semibold text-center mb-4">
+        <p className="text-rich-black text-3xl font-semibold text-center mb-4">
           Membership Plans
         </p>
-        <p className="text-[#6F6F6F] leading-6 md:w-[664px] text-center mb-4">
+        <p className="text-dim-gray leading-6 md:w-[664px] text-center mb-4">
           At Bamba Labs, we offer more than just a space to work—we provide
           connections, collaborations, and opportunities. Whether you’re a
           freelancer, startup, or growing company, our hub provides the perfect
@@ -82,23 +81,23 @@ const MembershipPlans = () => {
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col w-full bg-[#171717] px-6 rounded-2xl gap-8 py-8"
+            className="flex flex-col w-full bg-rich-black px-6 rounded-2xl gap-8 py-8"
           >
             <div className="text-start flex flex-col w-full gap-4 space-y-4 py-4">
-              <p className="text-[#FCFCFC] text-2xl font-semibold">
+              <p className="text-very-light-gray text-2xl font-semibold">
                 {item.name}
               </p>
-              <p className="text-[#DBDBDB] leading-6">{item.description}</p>
-              <p className="text-[#FCFCFC] text-3xl font-semibold">
+              <p className="text-light-gray leading-6">{item.description}</p>
+              <p className="text-very-light-gray text-3xl font-semibold">
                 {item.price}
               </p>
 
-              <div className="bg-[#007AFF] text-black rounded-full w-full md:w-[166px] h-[48px] flex justify-center items-center">
+              <div className="bg-azure text-rich-black rounded-full w-full md:w-[166px] h-[48px] flex justify-center items-center">
                 <p>Learn more</p>
               </div>
 
               <button
-                className="text-[#DBDBDB] mb-2 md:hidden self-center flex flex-row justify-center items-center gap-2 space-x-3"
+                className="text-light-gray mb-2 md:hidden self-center flex flex-row justify-center items-center gap-2 space-x-3"
                 onClick={() => toggleBenefits(index)}
               >
                 <svg
@@ -135,7 +134,7 @@ const MembershipPlans = () => {
                   : "hidden"
               }`}
             >
-              <ul className="list-none text-[#6F6F6F]">
+              <ul className="list-none text-dim-gray">
                 {item.benefits.map((benefit, index) => (
                   <li
                     key={index}
@@ -156,7 +155,7 @@ const MembershipPlans = () => {
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <p className="text-start text-[#DBDBDB]">{benefit}</p>
+                    <p className="text-start text-light-gray">{benefit}</p>
                   </li>
                 ))}
               </ul>
@@ -164,7 +163,7 @@ const MembershipPlans = () => {
           </div>
         ))}
       </div>
-      <div className="bg-[#171717] w-[119px] h-[40px] flex items-center justify-center rounded-full">
+      <div className="bg-rich-black w-[119px] h-[40px] flex items-center justify-center rounded-full">
         <p>Learn More</p>
       </div>
     </div>

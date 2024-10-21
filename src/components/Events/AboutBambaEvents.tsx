@@ -1,21 +1,21 @@
 const AboutBambaEvents = () => {
   return (
-    <div className="flex justify-center bg-[#171717]">
+    <div className="flex justify-center bg-rich-black">
       <div className="text-center  flex flex-col items-center justify-center max-w-7xl w-full py-20 xl:px-0 px-6 gap-8">
         <div className="gap-4 flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center items-center gap-2">
-            <p className="text-[#DBDBDB] text-sm">About Bamba Events</p>
-            <p className="text-[#FCFCFC] text-3xl font-semibold">
+            <p className="text-light-gray text-sm">About Bamba Events</p>
+            <p className="text-very-light-gray text-3xl font-semibold">
               Chainlink, The Graph and Arbitrum
             </p>
           </div>
-          <p className="leading-6 text-[#DBDBDB] md:w-[664px]">
+          <p className="leading-6 text-light-gray md:w-[664px]">
             Bamba Labs is your go-to ecosystem eith coworking, an agency,
             builders club, and epic events-all designed to spark innvation,
             build community, and launch startups in crypto and tech.
           </p>
         </div>
-        <div className="flex justify-center items-center rounded-2xl max-w-7xl w-full md:h-[631px] h-[290px] bg-[#6F6F6F]">
+        <div className="flex justify-center items-center rounded-2xl max-w-7xl w-full md:h-[631px] h-[290px] bg-dim-gray">
           <svg
             width="114"
             height="83"

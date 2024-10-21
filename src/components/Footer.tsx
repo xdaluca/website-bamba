@@ -2,7 +2,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="bg-[#171717] h-[234px] w-full flex flex-col items-center justify-center text-white text-sm space-y-7">
+    <div className="bg-rich-black h-[234px] w-full flex flex-col items-center justify-center space-y-7">
       <svg
         width="160"
         height="43"
@@ -125,7 +125,7 @@ const Footer = () => {
         </svg>
       </div>
       <div>
-        <p className="text-[#6F6F6F]">
+        <p className="text-dim-gray">
           © {currentYear} Bamba Labs. All rights reserved.
         </p>
       </div>

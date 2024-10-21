@@ -176,7 +176,7 @@ const Template: FC<TemplateProps> = ({ children }) => {
                 onClick={toggleSidebar}
                 aria-controls="logo-sidebar"
                 type="button"
-                className="inline-flex items-center rounded-lg  p-2 text-sm text-white md:hidden"
+                className="inline-flex items-center rounded-lg font-semibold p-2 text-sm md:hidden"
               >
                 {!isSidebarOpen ? (
                   <svg
@@ -249,7 +249,7 @@ const Template: FC<TemplateProps> = ({ children }) => {
           {menu.map((item) => (
             <Link
               key={item.name}
-              className="block rounded-full px-4 py-2 hover:bg-[#007AFF] text-[#6F6F6F] text-center"
+              className="block rounded-full px-4 py-2 hover:bg-azure text-dim-gray text-center"
               href={item.link}
             >
               {item.name}
@@ -258,7 +258,7 @@ const Template: FC<TemplateProps> = ({ children }) => {
         </div>
       </aside>
 
-      <div className="relative text-white">
+      <div className="relative">
         <div className="mt-14 min-h-screen pt-5">{children}</div>
         <Footer />
       </div>
