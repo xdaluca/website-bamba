@@ -1,8 +1,5 @@
-import BambaEco from "@/components/home/BambaEco";
-import BambaTeam from "@/components/home/BambaTeam";
-import HeadLine from "@/components/home/HeadLine";
-import OurPartners from "@/components/home/OurPartners";
-import Template from "@/components/Template";
+import { Template } from "@/components";
+import { BambaEco, BambaTeam, HeadLine, OurPartners } from "@/components/home";
 
 export default function Home() {
   return (
