@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const data = [
   {
@@ -55,7 +55,13 @@ const data = [
 ];
 
 const MembershipPlans = () => {
-  const [expandedIndex, setExpandedIndex] = useState<number | null>();
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const [isClient, setIsClient] = useState<boolean>(false);
+
+  useEffect(() => {
+    // Este código será executado apenas no lado do cliente
+    setIsClient(true);
+  }, []);
 
   const toggleBenefits = (index: number) => {
     setExpandedIndex(expandedIndex === index ? null : index);
@@ -66,9 +72,9 @@ const MembershipPlans = () => {
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-2">
           <p className="text-sm text-dim-gray text-center ">About Bamba Hub</p>
-          <p className="text-rich-black text-3xl font-semibold text-center ">
+          <h2 className="text-rich-black text-3xl font-semibold text-center ">
             Membership Plans
-          </p>
+          </h2>
         </div>
         <p className="text-dim-gray leading-6 md:w-[664px] text-center">
           At Bamba Labs, we offer more than just a space to work—we provide
@@ -129,7 +135,8 @@ const MembershipPlans = () => {
 
             <div
               className={`w-full pb-4 ${
-                expandedIndex === index || window.innerWidth >= 768
+                expandedIndex === index ||
+                (isClient && window.innerWidth >= 768)
                   ? ""
                   : "hidden"
               }`}

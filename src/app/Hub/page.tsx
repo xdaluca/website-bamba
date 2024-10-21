@@ -7,6 +7,10 @@ import {
   Space,
 } from "@/components/hub";
 
+export const metadata = {
+  title: "Bamba Labs | Hub",
+  description: "Hub",
+};
 const Hub = () => {
   return (
     <Template>

@@ -1,3 +1,7 @@
+"use client";
+import Image from "next/image";
+import React from "react";
+
 const data = [
   {
     img: "https://pt-br.learn.canva.com/wp-content/uploads/sites/9/2020/01/evento-corporativo-1.jpg",
@@ -33,9 +37,9 @@ const EventsAndNetworking = () => {
           <div className="gap-4 flex flex-col justify-center text-center items-center">
             <div className="flex flex-col gap-2">
               <p className="text-sm text-light-gray">About Bamba Hub</p>
-              <h3 className="text-2xl font-semibold leading-8 text-[#F6F7F6]">
+              <h2 className="text-2xl font-semibold leading-8 text-[#F6F7F6]">
                 Events and Networking
-              </h3>
+              </h2>
             </div>
             <p className="text-light-gray leading-6 w-full md:w-[800px] ">
               At Bamba Labs, we promote a constant schedule of events, meetups
@@ -62,9 +66,11 @@ const EventsAndNetworking = () => {
                   margin: "0 8px",
                 }}
               >
-                <img
+                <Image
                   src={event.img}
                   alt={event.title}
+                  width={300}
+                  height={200}
                   className="w-full h-[200px] object-cover rounded-t-lg"
                 />
                 <div className="p-4">
