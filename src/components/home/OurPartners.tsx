@@ -31,7 +31,7 @@ const OurPartners = () => {
           {data.map((item, index) => (
             <div
               key={index}
-              className="flex justify-center bg-rich-black rounded-full transition duration-300 ease-in-out hover:bg-very-light-gray hover:scale-105"
+              className="flex justify-center bg-rich-black rounded-full transition duration-300 ease-in-out hover:bg-very-light-gray hover:scale-105 cursor-pointer"
             >
               <img
                 src={item}

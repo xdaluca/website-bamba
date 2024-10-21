@@ -14,7 +14,7 @@ const HeadLine = () => {
           the future of <br className="hidden md:flex" /> technology and crypto
           in Latin America.
         </p>
-        <div className="bg-rich-black text-very-light-gray rounded-full w-full md:w-[166px] h-[48px] flex justify-center items-center">
+        <div className="bg-rich-black text-very-light-gray rounded-full w-full md:w-[166px] h-[48px] flex justify-center items-center transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
           <p>Learn More</p>
         </div>
       </div>
