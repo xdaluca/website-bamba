@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -10,8 +9,11 @@ export const menu = [
 ];
 
 const SelectMenu = () => {
-  const [activeLink, setActiveLink] = useState<string>("/");
+  const [activeLink, setActiveLink] = useState<string>(
+    window.location.pathname
+  );
   const [hoveredLink, setHoveredLink] = useState<string>("");
+  const [isAnimating, setIsAnimating] = useState<boolean>(false);
 
   useEffect(() => {
     setActiveLink(window.location.pathname);
@@ -23,7 +25,7 @@ const SelectMenu = () => {
     const totalLinks = menu.length;
 
     const adjustedWidth1 = `${(100 / totalLinks) * 1.2}%`;
-    const adjustedWidth2 = `${(100 / totalLinks) * 0.9}%`;
+    const adjustedWidth2 = `${(100 / totalLinks) * 0.94}%`;
     const adjustedWidth = `${(100 / totalLinks) * 1.13}%`;
     return {
       width:
@@ -47,7 +49,9 @@ const SelectMenu = () => {
   return (
     <div className="relative md:flex hidden flex-row bg-[#F8F8F8] p-4 rounded-full space-x-3 overflow-hidden">
       <div
-        className={`absolute bg-azure transition-all duration-300 rounded-full`}
+        className={`absolute bg-azure ${
+          isAnimating ? "transition-all duration-300 ease-in-out" : "duration-0"
+        } rounded-full`}
         style={{
           width,
           left,
@@ -59,8 +63,8 @@ const SelectMenu = () => {
       {menu.map((item) => (
         <Link
           key={item.name}
-          className={`block relative z-10 text-center transition duration-200 ${
-            activeLink === item.link && hoveredLink !== item.link
+          className={`block relative z-10 text-center transition duration-100 ${
+            activeLink === item.link
               ? "text-[#0F172A]"
               : hoveredLink === item.link
               ? "text-[#F8F8F8]"
@@ -70,9 +74,17 @@ const SelectMenu = () => {
           onClick={() => {
             setActiveLink(item.link);
             setHoveredLink("");
+            setIsAnimating(false);
+            setTimeout(() => setIsAnimating(true), 0);
           }}
-          onMouseEnter={() => setHoveredLink(item.link)}
-          onMouseLeave={() => setHoveredLink("")}
+          onMouseEnter={() => {
+            setHoveredLink(item.link);
+            setIsAnimating(true);
+          }}
+          onMouseLeave={() => {
+            setHoveredLink("");
+            setIsAnimating(true);
+          }}
         >
           <span className="block px-3 py-2">{item.name}</span>
         </Link>
