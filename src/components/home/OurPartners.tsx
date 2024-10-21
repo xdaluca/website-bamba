@@ -1,3 +1,7 @@
+"use client";
+import Image from "next/image";
+import React from "react";
+
 const data = [
   "/imagens/partners/partners1.png",
   "/imagens/partners/partners2.png",
@@ -15,9 +19,9 @@ const OurPartners = () => {
       <div className="text-rich-black md:text-left text-center flex flex-col gap-4 py-10 px-6">
         <div className="flex flex-col gap-2">
           <p className="text-sm">Our partners</p>
-          <p className="font-semibold text-2xl">
+          <h2 className="font-semibold text-2xl">
             Partnerships that elevate Web3 technology
-          </p>
+          </h2>
         </div>
 
         <p>
@@ -33,10 +37,12 @@ const OurPartners = () => {
               key={index}
               className="flex justify-center bg-rich-black rounded-full transition duration-300 ease-in-out hover:bg-very-light-gray hover:scale-105 cursor-pointer"
             >
-              <img
+              <Image
                 src={item}
                 alt={`Partner ${index + 1}`}
-                className="h-auto w-full max-w-[142px] object-contain transition duration-300 ease-in-out hover:filter hover:brightness-0"
+                width={130}
+                height={56}
+                className="h-auto max-w-[160px] object-contain transition duration-300 ease-in-out hover:filter hover:brightness-0"
               />
             </div>
           ))}

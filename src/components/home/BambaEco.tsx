@@ -79,7 +79,7 @@ const BambaEco = () => {
                       fill="#171717"
                     />
                   </svg>
-                  <p className="text-3xl font-semibold">{item.title}</p>
+                  <h2 className="text-3xl font-semibold">{item.title}</h2>
                 </div>
                 <p className="leading-6">{item.description}</p>
               </div>

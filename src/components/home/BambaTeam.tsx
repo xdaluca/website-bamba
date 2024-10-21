@@ -52,9 +52,9 @@ const BambaTeam = () => {
         <div className="flex-1 gap-4 flex flex-col justify-center px-14">
           <div className="flex flex-col gap-2">
             <p className="text-sm text-light-gray">Bamba Team</p>
-            <h3 className="text-2xl font-semibold leading-8 text-[#F6F7F6]">
+            <h2 className="text-2xl font-semibold leading-8 text-[#F6F7F6]">
               Bamba Team: Innovation in every detail
-            </h3>
+            </h2>
           </div>
           <p className="text-light-gray gap-6 leading-6">
             Meet the visionaries leading Bamba Labs. With a unique blend of
