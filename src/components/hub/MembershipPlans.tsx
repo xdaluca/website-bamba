@@ -62,15 +62,15 @@ const MembershipPlans = () => {
   };
 
   return (
-    <div className="flex justify-center flex-col items-center py-20 gap-4 text-center max-w-7xl w-full mx-auto px-6 xl:px-0">
-      <div>
-        <p className="text-sm text-dim-gray text-center mb-4">
-          About Bamba Hub
-        </p>
-        <p className="text-rich-black text-3xl font-semibold text-center mb-4">
-          Membership Plans
-        </p>
-        <p className="text-dim-gray leading-6 md:w-[664px] text-center mb-4">
+    <div className="flex justify-center flex-col items-center py-20 gap-6 text-center max-w-7xl w-full mx-auto px-6 xl:px-0">
+      <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-2">
+          <p className="text-sm text-dim-gray text-center ">About Bamba Hub</p>
+          <p className="text-rich-black text-3xl font-semibold text-center ">
+            Membership Plans
+          </p>
+        </div>
+        <p className="text-dim-gray leading-6 md:w-[664px] text-center">
           At Bamba Labs, we offer more than just a space to work—we provide
           connections, collaborations, and opportunities. Whether you’re a
           freelancer, startup, or growing company, our hub provides the perfect
@@ -92,12 +92,12 @@ const MembershipPlans = () => {
                 {item.price}
               </p>
 
-              <div className="bg-azure text-rich-black rounded-full w-full md:w-[166px] h-[48px] flex justify-center items-center">
+              <div className="bg-azure text-rich-black rounded-full w-full h-[48px] flex justify-center items-center transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
                 <p>Learn more</p>
               </div>
 
               <button
-                className="text-light-gray mb-2 md:hidden self-center flex flex-row justify-center items-center gap-2 space-x-3"
+                className="text-light-gray mb-2 md:hidden self-center flex flex-row justify-center items-center gap-2 space-x-3 "
                 onClick={() => toggleBenefits(index)}
               >
                 <svg
@@ -163,7 +163,7 @@ const MembershipPlans = () => {
           </div>
         ))}
       </div>
-      <div className="bg-rich-black w-[119px] h-[40px] flex items-center justify-center rounded-full">
+      <div className="bg-rich-black w-[119px] h-[40px] text-very-light-gray flex items-center justify-center rounded-full transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
         <p>Learn More</p>
       </div>
     </div>

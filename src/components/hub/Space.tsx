@@ -44,7 +44,7 @@ const Space = () => {
 
       <div className="grid grid-rows-[1fr,auto] gap-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <div className="md:h-[642px] h-[313px] bg-rich-blatext-rich-black p-4 flex flex-col justify-between rounded-2xl">
+          <div className="md:h-[642px] h-[313px] bg-rich-black p-4 flex flex-col justify-between rounded-2xl">
             <p className="text-3xl font-semibold text-[#F7F7F6]">49</p>
             <div className="gap-4">
               <p className="font-semibold text-2xl text-[#F7F7F6]">
