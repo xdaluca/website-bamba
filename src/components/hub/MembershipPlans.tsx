@@ -107,13 +107,16 @@ const MembershipPlans = () => {
                   viewBox="0 0 12 8"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  className={`transition-transform duration-300 ${
+                    expandedIndex === index ? "rotate-180" : ""
+                  }`}
                 >
                   <path
                     d="M1 1.68359L6 6.68359L11 1.68359"
                     stroke="#007AFF"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
 
