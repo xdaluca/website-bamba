@@ -13,7 +13,7 @@ const data = [
   "/imagens/partners/partners8.png",
 ];
 
-const ScrollingPatterns: React.FC = () => {
+const ScrollingPatterns = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {

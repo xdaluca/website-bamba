@@ -1,12 +1,13 @@
-import AboutBambaEvents from "@/components/Events/AboutBambaEvents";
-import BambaEvents from "@/components/Events/BambaEvents";
-import HeadLineEvents from "@/components/Events/HeadLineEvents";
-import Partners from "@/components/Events/Partners";
-import Template from "@/components/Template";
-import { FC } from "react";
-import MemberShipPlans from "@/components/Events/MemberShipPlans";
+import {
+  AboutBambaEvents,
+  BambaEvents,
+  HeadLineEvents,
+  MemberShipPlans,
+  Partners,
+  Template,
+} from "@/components/Events";
 
-const Events: FC = () => {
+const Events = () => {
   return (
     <Template>
       <HeadLineEvents />

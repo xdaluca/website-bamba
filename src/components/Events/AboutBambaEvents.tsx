@@ -1,7 +1,39 @@
+"use client";
+import React, { useState } from "react";
+
+const videos = [
+  {
+    id: "1qrgu48Vb0HxG_kHdLRlQ-kE8zNQP9zQ0",
+    title: "Video 1",
+  },
+  {
+    id: "1lFV4DrqGkcezXpSEcn_mAEGRgb_mB-y1",
+    title: "Video 2",
+  },
+];
+
 const AboutBambaEvents = () => {
+  const [currentVideoIndex, setCurrentVideoIndex] = useState<number>(0);
+
+  const handleVideoChange = (index: number) => {
+    setCurrentVideoIndex(index);
+  };
+
+  const handleNextVideo = () => {
+    setCurrentVideoIndex((prevIndex) =>
+      prevIndex < videos.length - 1 ? prevIndex + 1 : prevIndex
+    );
+  };
+
+  const handlePreviousVideo = () => {
+    setCurrentVideoIndex((prevIndex) =>
+      prevIndex > 0 ? prevIndex - 1 : prevIndex
+    );
+  };
+
   return (
     <div className="flex justify-center bg-rich-black">
-      <div className="text-center  flex flex-col items-center justify-center max-w-7xl w-full py-20 xl:px-0 px-6 gap-8">
+      <div className="text-center flex flex-col items-center justify-center max-w-7xl w-full py-20 xl:px-0 px-6 gap-8">
         <div className="gap-4 flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center items-center gap-2">
             <p className="text-light-gray text-sm">About Bamba Events</p>
@@ -10,37 +42,92 @@ const AboutBambaEvents = () => {
             </p>
           </div>
           <p className="leading-6 text-light-gray md:w-[664px]">
-            Bamba Labs is your go-to ecosystem eith coworking, an agency,
-            builders club, and epic events-all designed to spark innvation,
+            Bamba Labs is your go-to ecosystem with coworking, an agency,
+            builders club, and epic events—all designed to spark innovation,
             build community, and launch startups in crypto and tech.
           </p>
         </div>
-        <div className="flex justify-center items-center rounded-2xl max-w-7xl w-full md:h-[631px] h-[290px] bg-dim-gray">
-          <svg
-            width="114"
-            height="83"
-            viewBox="0 0 114 83"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+        <div className="flex justify-center items-center rounded-2xl max-w-7xl w-full bg-dim-gray relative overflow-hidden">
+          <div
+            className="w-full"
+            style={{ aspectRatio: "16 / 9" }}
           >
-            <path
-              d="M109.701 15.0336C109.107 12.6606 107.897 10.4865 106.194 8.73062C104.491 6.9748 102.355 5.69952 100.001 5.03359C91.4009 2.93359 57.0009 2.93359 57.0009 2.93359C57.0009 2.93359 22.6009 2.93359 14.0009 5.23359C11.6471 5.89952 9.51079 7.1748 7.80764 8.93062C6.10449 10.6865 4.89485 12.8606 4.30091 15.2336C2.72698 23.9614 1.95708 32.8151 2.00091 41.6836C1.9448 50.6188 2.71474 59.5401 4.30091 68.3336C4.9557 70.6328 6.19244 72.7243 7.89162 74.406C9.59081 76.0877 11.695 77.3027 14.0009 77.9336C22.6009 80.2336 57.0009 80.2336 57.0009 80.2336C57.0009 80.2336 91.4009 80.2336 100.001 77.9336C102.355 77.2677 104.491 75.9924 106.194 74.2366C107.897 72.4807 109.107 70.3065 109.701 67.9336C111.263 59.2715 112.033 50.4853 112.001 41.6836C112.057 32.7484 111.287 23.8271 109.701 15.0336Z"
-              stroke="#30322F"
-              stroke-width="4"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M45.7509 58.0336L74.5009 41.6836L45.7509 25.3336V58.0336Z"
-              stroke="#30322F"
-              stroke-width="4"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+            <iframe
+              src={`https://drive.google.com/file/d/${videos[currentVideoIndex].id}/preview`}
+              width="100%"
+              height="100%"
+              className="rounded-2xl"
+              allow="autoplay"
+              frameBorder="0"
+            ></iframe>
+          </div>
+        </div>
+
+        <div className="flex justify-center items-center gap-4 mt-4 text-sm">
+          <div className="flex justify-center items-center gap-4 mt-4">
+            <button
+              onClick={handlePreviousVideo}
+              disabled={currentVideoIndex === 0}
+              className=" text-white flex flex-row items-center gap-2"
+            >
+              <svg
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 12.9336L6 8.93359L10 4.93359"
+                  stroke="#DBDBDB"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+
+              <p>Previous</p>
+            </button>
+            {videos.map((video, index) => (
+              <button
+                key={video.id}
+                className={`px-4 py-2 rounded ${
+                  index === currentVideoIndex
+                    ? "bg-gray-300 text-black"
+                    : "text-white"
+                }`}
+                onClick={() => handleVideoChange(index)}
+              >
+                {index + 1}
+              </button>
+            ))}
+            <button
+              onClick={handleNextVideo}
+              disabled={currentVideoIndex === videos.length - 1}
+              className=" text-white flex flex-row items-center gap-2"
+            >
+              <p>Next</p>
+              <svg
+                width="6"
+                height="10"
+                viewBox="0 0 6 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 8.93359L5 4.93359L1 0.933594"
+                  stroke="#DBDBDB"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </div>
   );
 };
+
 export default AboutBambaEvents;
