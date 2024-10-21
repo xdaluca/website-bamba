@@ -9,14 +9,14 @@ export const menu = [
 ];
 
 const SelectMenu = () => {
-  const [activeLink, setActiveLink] = useState<string>(
-    window.location.pathname
-  );
+  const [activeLink, setActiveLink] = useState<string>();
   const [hoveredLink, setHoveredLink] = useState<string>("");
   const [isAnimating, setIsAnimating] = useState<boolean>(false);
 
   useEffect(() => {
-    setActiveLink(window.location.pathname);
+    if (typeof window !== "undefined") {
+      setActiveLink(window.location.pathname);
+    }
   }, []);
 
   const getUnderlineStyles = () => {
