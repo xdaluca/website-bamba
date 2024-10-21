@@ -17,7 +17,7 @@ const Template: FC<TemplateProps> = ({ children }) => {
 
   return (
     <>
-      <nav className="fixed  top-0 z-50 w-full bg-[#F8F8F8]">
+      <nav className="fixed  top-0 z-50 w-full bg-white">
         <div className="px-3 py-4 lg:px-5 lg:pl-3 max-w-7xl mx-auto">
           <div className="relative flex items-center justify-between">
             <div className="flex items-center justify-between w-full">
