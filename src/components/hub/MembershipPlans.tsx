@@ -59,7 +59,6 @@ const MembershipPlans = () => {
   const [isClient, setIsClient] = useState<boolean>(false);
 
   useEffect(() => {
-    // Este código será executado apenas no lado do cliente
     setIsClient(true);
   }, []);
 
@@ -99,11 +98,11 @@ const MembershipPlans = () => {
               </p>
 
               <div className="bg-azure text-rich-black rounded-full w-full h-[48px] flex justify-center items-center transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
-                <p>Learn more</p>
+                <p className="select-none">Learn more</p>
               </div>
 
               <button
-                className="text-light-gray mb-2 md:hidden self-center flex flex-row justify-center items-center gap-2 space-x-3 "
+                className="text-light-gray mb-2 md:hidden self-center flex flex-row justify-center items-center gap-2 space-x-3"
                 onClick={() => toggleBenefits(index)}
               >
                 <svg
@@ -171,7 +170,7 @@ const MembershipPlans = () => {
         ))}
       </div>
       <div className="bg-rich-black w-[119px] h-[40px] text-very-light-gray flex items-center justify-center rounded-full transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
-        <p>Learn More</p>
+        <p className="select-none">Learn More</p>
       </div>
     </div>
   );

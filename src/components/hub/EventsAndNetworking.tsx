@@ -87,7 +87,7 @@ const EventsAndNetworking = () => {
           </div>
 
           <div className="w-[193px] self-center bg-very-light-gray text-rich-black rounded-full h-[48px] flex justify-center items-center transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
-            <p>See More Events</p>
+            <p className="select-none">See More Events</p>
           </div>
         </div>
       </div>

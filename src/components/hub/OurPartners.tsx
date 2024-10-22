@@ -32,7 +32,7 @@ const OurPartners = () => {
           {data.map((item, index) => (
             <div
               key={index}
-              className="group flex justify-center"
+              className="group flex justify-center cursor-pointer"
             >
               <Image
                 src={item}
