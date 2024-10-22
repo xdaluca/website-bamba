@@ -10,6 +10,10 @@ const videos = [
     id: "1lFV4DrqGkcezXpSEcn_mAEGRgb_mB-y1",
     title: "Video 2",
   },
+  {
+    id: "1h51-36IzE_MBHrnOs_R60SCXvreoVF24",
+    title: "Video 3",
+  },
 ];
 
 const AboutBambaEvents = () => {

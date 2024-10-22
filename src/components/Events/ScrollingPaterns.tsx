@@ -40,20 +40,20 @@ const ScrollingPatterns = () => {
       ref={scrollRef}
     >
       <div
-        className="flex flex-row"
+        className="flex flex-row h-full"
         style={{ width: "200%" }}
       >
         {data.concat(data).map((item, index) => (
           <div
             key={index}
-            className="mx-2"
+            className="mx-2 h-full flex items-center"
           >
             <Image
               src={item}
               width={1200}
               height={600}
               alt={`Imagem ${index}`}
-              className="max-w-full h-auto"
+              className="w-auto h-auto max-w-full min-w-[200px] min-h-[100px]  object-contain"
             />
           </div>
         ))}
