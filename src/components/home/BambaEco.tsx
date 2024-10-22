@@ -85,7 +85,7 @@ const BambaEco = () => {
               </div>
 
               <div className="self-end w-full md:w-[151px] flex justify-center p-2 bg-rich-black text-very-light-gray rounded-full transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
-                <p>Learn More</p>
+                <p className="select-none">Learn More</p>
               </div>
             </div>
           ))}
