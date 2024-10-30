@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
 
 const data = [
   {
@@ -6,8 +9,16 @@ const data = [
     position: "Co-Founder",
     image: "/imagens/user.jpeg",
     redes: [
-      { src: "/imagens/redes/linkedin.png", alt: "LinkedIn" },
-      { src: "/imagens/redes/x.png", alt: "X (Twitter)" },
+      {
+        src: "/imagens/redes/linkedin.png",
+        alt: "LinkedIn",
+        link: "https://www.linkedin.com/in/lucacosivi/",
+      },
+      {
+        src: "/imagens/redes/x.png",
+        alt: "X (Twitter)",
+        link: "https://x.com/daluca_",
+      },
     ],
   },
   {
@@ -15,33 +26,59 @@ const data = [
     position: "Co-Founder",
     image: "/imagens/user.jpeg",
     redes: [
-      { src: "/imagens/redes/linkedin.png", alt: "LinkedIn" },
-      { src: "/imagens/redes/instagram.png", alt: "Instagram" },
+      {
+        src: "/imagens/redes/linkedin.png",
+        alt: "LinkedIn",
+        link: "https://www.linkedin.com/in/antonio-pedro-de-faro-carneiro/",
+      },
+      {
+        src: "/imagens/redes/instagram.png",
+        alt: "Instagram",
+        link: "https://www.instagram.com/souantoniocarneiro/",
+      },
     ],
   },
   {
     name: "Thomas Bourlon",
     position: "Co-Founder",
     image: "/imagens/user.jpeg",
-    redes: [{ src: "/imagens/redes/linkedin.png", alt: "LinkedIn" }],
+    redes: [
+      {
+        src: "/imagens/redes/linkedin.png",
+        alt: "LinkedIn",
+        link: "https://www.linkedin.com/in/thomasbourlon/",
+      },
+    ],
   },
   {
     name: "Vinicius Santos",
     position: "Developer Relations",
     image: "/imagens/user.jpeg",
-    redes: [{ src: "/imagens/redes/linkedin.png", alt: "LinkedIn" }],
+    redes: [
+      {
+        src: "/imagens/redes/linkedin.png",
+        alt: "LinkedIn",
+        link: "https://www.linkedin.com/in/vinicius-santos101/",
+      },
+    ],
   },
   {
     name: "Larissa Freitas",
     position: "Hub & Events Lead",
     image: "/imagens/user.jpeg",
-    redes: [{ src: "/imagens/redes/linkedin.png", alt: "LinkedIn" }],
+    redes: [
+      {
+        src: "/imagens/redes/linkedin.png",
+        alt: "LinkedIn",
+        link: "https://www.linkedin.com/in/larissa-freitas-03b228295/",
+      },
+    ],
   },
   {
     name: "Manoela Franco",
     position: "General Counsel",
     image: "/imagens/user.jpeg",
-    redes: [{ src: "/imagens/redes/linkedin.png", alt: "LinkedIn" }],
+    redes: [{ src: "/imagens/redes/linkedin.png", alt: "LinkedIn", link: "" }],
   },
 ];
 
@@ -104,7 +141,9 @@ const BambaTeam = () => {
 
               <div className="flex gap-4 mt-4 justify-center">
                 {item.redes.map((rede, i) => (
-                  <div
+                  <Link
+                    href={rede.link}
+                    target="_blank"
                     key={i}
                     className="cursor-pointer"
                   >
@@ -115,7 +154,7 @@ const BambaTeam = () => {
                       height={24}
                       className="filter brightness-0 invert-[0.6] grayscale group-hover:grayscale-0 group-hover:invert transition-all duration-300 ease-in-out"
                     />
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>

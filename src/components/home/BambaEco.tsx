@@ -1,33 +1,28 @@
+import Link from "next/link";
+
 const data = [
   {
     title: "Hub",
     description:
       "Our space is the meeting point for builders and who are shaping the future of cryptocurrencies and technology in Rio.",
     bg: "bg-[#E1EFFF]",
+    link: "/Hub",
   },
   {
     title: "Events",
     description:
       "Hackathons and meetups that accelerate ideas and connect innovative minds to create solutions ecosystem.",
     bg: "bg-azure",
-  },
-  {
-    title: "Builders",
-    description:
-      "A community of dedicated builders developing the next generation of Web3 and Blockchain solutions.",
-    bg: "bg-[#E1EFFF]",
-  },
-  {
-    title: "Studio",
-    description:
-      "We empower startups with strategic and development, helping them grow in the crypto and tech landscape.",
-    bg: "bg-azure",
+    link: "/Events",
   },
 ];
 
 const BambaEco = () => {
   return (
-    <div className="w-full flex justify-center items-center px-6">
+    <div
+      id="bamba-eco"
+      className="w-full flex justify-center items-center px-6"
+    >
       <div
         className="max-w-7xl mx-auto flex flex-col items-center justify-center bg-rich-black px-6 gap-8 rounded-2xl py-20"
         style={{ boxShadow: "0px -40px 160px 0px #007AFF29" }}
@@ -84,7 +79,10 @@ const BambaEco = () => {
                 <p className="leading-6">{item.description}</p>
               </div>
 
-              <div className="relative group w-full md:w-[166px] h-[48px] cursor-pointer hover:scale-105 transition duration-300 ease-in-out">
+              <Link
+                href={item.link}
+                className="relative group w-full md:w-[166px] h-[48px] cursor-pointer hover:scale-105 transition duration-300 ease-in-out"
+              >
                 <div
                   className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out"
                   style={{
@@ -94,7 +92,7 @@ const BambaEco = () => {
                 <div className="bg-rich-black text-very-light-gray rounded-full w-full h-full flex justify-center items-center">
                   <p className="select-none">Learn More</p>
                 </div>
-              </div>
+              </Link>
             </div>
           ))}
         </div>

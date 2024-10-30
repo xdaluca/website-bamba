@@ -1,16 +1,41 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const data = [
-  "/imagens/partners/partners1.png",
-  "/imagens/partners/partners2.png",
-  "/imagens/partners/partners3.png",
-  "/imagens/partners/partners4.png",
-  "/imagens/partners/partners5.png",
-  "/imagens/partners/partners6.png",
-  "/imagens/partners/partners7.png",
-  "/imagens/partners/partners8.png",
+  {
+    img: "/imagens/partners/partners1.png",
+    link: "https://chain.link/",
+  },
+  {
+    img: "/imagens/partners/partners2.png",
+    link: "https://thegraph.com/pt/",
+  },
+  {
+    img: "/imagens/partners/partners3.png",
+    link: "https://arbitrum.io/",
+  },
+  {
+    img: "/imagens/partners/partners4.png",
+    link: "https://polygon.technology/",
+  },
+  {
+    img: "/imagens/partners/partners5.png",
+    link: "https://near.org/",
+  },
+  {
+    img: "/imagens/partners/partners6.png",
+    link: "https://ethereum.org/en/",
+  },
+  {
+    img: "/imagens/partners/partners7.png",
+    link: "https://www.openzeppelin.com/",
+  },
+  {
+    img: "/imagens/partners/partners8.png",
+    link: "https://www.ledger.com/",
+  },
 ];
 
 const OurPartners = () => {
@@ -33,18 +58,20 @@ const OurPartners = () => {
       <div className="bg-azure w-full py-10 px-6 rounded-3xl md:h-[631px] justify-center flex items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {data.map((item, index) => (
-            <div
+            <Link
+              target="_blank"
+              href={item.link}
               key={index}
               className="flex justify-center bg-rich-black rounded-full transition duration-300 ease-in-out hover:bg-very-light-gray hover:scale-105 cursor-pointer"
             >
               <Image
-                src={item}
+                src={item.img}
                 alt={`Partner ${index + 1}`}
                 width={130}
                 height={56}
                 className="h-auto max-w-[160px] object-contain transition duration-300 ease-in-out hover:filter hover:brightness-0"
               />
-            </div>
+            </Link>
           ))}
         </div>
       </div>
