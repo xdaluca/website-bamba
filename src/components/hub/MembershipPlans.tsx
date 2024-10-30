@@ -97,8 +97,16 @@ const MembershipPlans = () => {
                 {item.price}
               </p>
 
-              <div className="bg-azure text-rich-black rounded-full w-full h-[48px] flex justify-center items-center transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
-                <p className="select-none">Learn more</p>
+              <div className="relative group w-full h-[48px] cursor-pointer hover:scale-105 transition duration-300 ease-in-out">
+                <div
+                  className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out"
+                  style={{
+                    boxShadow: "0px 0px 30px 10px rgba(0, 122, 255, 0.2)",
+                  }}
+                ></div>
+                <div className="text-rich-black bg-azure rounded-full w-full h-full flex justify-center items-center">
+                  <p className="select-none">Learn More</p>
+                </div>
               </div>
 
               <button
@@ -168,9 +176,6 @@ const MembershipPlans = () => {
             </div>
           </div>
         ))}
-      </div>
-      <div className="bg-rich-black w-[119px] h-[40px] text-very-light-gray flex items-center justify-center rounded-full transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
-        <p className="select-none">Learn More</p>
       </div>
     </div>
   );

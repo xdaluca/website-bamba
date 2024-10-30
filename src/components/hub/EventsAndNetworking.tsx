@@ -86,8 +86,16 @@ const EventsAndNetworking = () => {
             ))}
           </div>
 
-          <div className="w-[193px] self-center bg-very-light-gray text-rich-black rounded-full h-[48px] flex justify-center items-center transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
-            <p className="select-none">See More Events</p>
+          <div className="relative group w-full md:w-[166px] h-[48px] cursor-pointer hover:scale-105 transition duration-300 ease-in-out self-center">
+            <div
+              className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out"
+              style={{
+                boxShadow: "0px 0px 30px 10px rgba(0, 122, 255, 0.2)",
+              }}
+            ></div>
+            <div className="bg-very-light-gray text-very-light-gray rounded-full w-full h-full flex justify-center items-center">
+              <p className="select-none text-rich-black">Learn More</p>
+            </div>
           </div>
         </div>
       </div>

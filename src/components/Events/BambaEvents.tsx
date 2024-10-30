@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const data = [
   {
     title: "ETHSamba Hackaton",
@@ -33,13 +31,16 @@ const BambaEvents = () => {
               {item.description}
             </p>
           </div>
-          <div className="flex justify-center p-2 bg-rich-black text-very-light-gray rounded-full md:w-[166px] w-full transition duration-300 ease-in-out hover:scale-105 cursor-pointer">
-            <Link
-              className="select-none"
-              href={item.link}
-            >
-              {item.btn}
-            </Link>
+          <div className="relative group h-[48px] cursor-pointer hover:scale-105 transition duration-300 ease-in-out">
+            <div
+              className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out"
+              style={{
+                boxShadow: "0px 0px 30px 10px rgba(0, 122, 255, 0.2)",
+              }}
+            ></div>
+            <div className="bg-rich-black text-very-light-gray rounded-full w-full h-full flex justify-center items-center px-5">
+              <p className="select-none">{item.btn}</p>
+            </div>
           </div>
         </div>
       ))}
