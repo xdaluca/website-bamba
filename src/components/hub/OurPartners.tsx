@@ -1,10 +1,17 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const data = [
-  "/imagens/partners/partners9.png",
-  "/imagens/partners/partners10.png",
-  "/imagens/partners/partners11.png",
-  "/imagens/partners/partners12.png",
+  { img: "/imagens/partners/partners9.png", link: "https://cartesi.io/" },
+  {
+    img: "/imagens/partners/partners10.png",
+    link: "https://www.voahoteis.com.br/",
+  },
+  {
+    img: "/imagens/partners/partners11.png",
+    link: "https://www.tripflip.com.br/en/",
+  },
+  { img: "/imagens/partners/partners12.png", link: "https://y5.systems/" },
 ];
 
 const OurPartners = () => {
@@ -30,18 +37,19 @@ const OurPartners = () => {
       <div className="bg-azure w-full lg:w-1/2 h-[631px] flex flex-col items-center justify-center rounded-2xl md:py-0 py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {data.map((item, index) => (
-            <div
+            <Link
               key={index}
+              href={item.link}
               className="group flex justify-center cursor-pointer"
             >
               <Image
-                src={item}
+                src={item.img}
                 alt={`Partner ${index + 1}`}
                 width={130}
                 height={56}
                 className={`h-auto max-w-[160px] object-contain transition duration-300 ease-in-out group-hover:invert hover:scale-105`}
               />
-            </div>
+            </Link>
           ))}
         </div>
       </div>

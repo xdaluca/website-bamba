@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const data = [
@@ -86,7 +87,11 @@ const EventsAndNetworking = () => {
             ))}
           </div>
 
-          <div className="relative group w-full md:w-[166px] h-[48px] cursor-pointer hover:scale-105 transition duration-300 ease-in-out self-center">
+          <Link
+            href={"https://lu.ma/Bambacompany"}
+            target="_blank"
+            className="relative group w-full md:w-[166px] h-[48px] cursor-pointer hover:scale-105 transition duration-300 ease-in-out self-center"
+          >
             <div
               className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out"
               style={{
@@ -96,7 +101,7 @@ const EventsAndNetworking = () => {
             <div className="bg-very-light-gray text-very-light-gray rounded-full w-full h-full flex justify-center items-center">
               <p className="select-none text-rich-black">Learn More</p>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
