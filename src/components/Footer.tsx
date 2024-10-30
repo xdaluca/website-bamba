@@ -53,8 +53,9 @@ const Footer = () => {
       </svg>
       <div className="flex flex-row space-x-4">
         <Link
+          target="_blank"
           className="transition duration-300 ease-in-out hover:scale-105 cursor-pointer"
-          href={""}
+          href={"https://www.instagram.com/bambalabs/"}
         >
           <svg
             width="25"
@@ -77,7 +78,8 @@ const Footer = () => {
         </Link>
         <Link
           className="transition duration-300 ease-in-out hover:scale-105 cursor-pointer"
-          href={""}
+          href={"https://www.linkedin.com/company/101072614/"}
+          target="_blank"
         >
           <svg
             width="25"
@@ -94,7 +96,8 @@ const Footer = () => {
         </Link>
         <Link
           className="transition duration-300 ease-in-out hover:scale-105 cursor-pointer"
-          href={""}
+          href={"https://x.com/bambalabs"}
+          target="_blank"
         >
           <svg
             width="25"
@@ -118,7 +121,8 @@ const Footer = () => {
         </Link>
         <Link
           className="transition duration-300 ease-in-out hover:scale-105 cursor-pointer"
-          href={""}
+          href={"https://lu.ma/Bambacompany"}
+          target="_blank"
         >
           <svg
             width="66"
