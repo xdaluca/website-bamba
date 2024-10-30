@@ -2,7 +2,6 @@ import {
   AboutBambaEvents,
   BambaEvents,
   HeadLineEvents,
-  MemberShipPlans,
   Partners,
   Template,
 } from "@/components/Events";
@@ -18,7 +17,7 @@ const Events = () => {
       <BambaEvents />
       <Partners />
       <AboutBambaEvents />
-      <MemberShipPlans />
+      {/* <MemberShipPlans /> */}
     </Template>
   );
 };

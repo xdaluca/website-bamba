@@ -1,17 +1,19 @@
+import Link from "next/link";
+
 const data = [
   {
     title: "ETHSamba Hackaton",
     description:
       "A welcoming space to take a break, grab a coffee or snack, and connect with other members.",
     btn: "Go To ETHSamba",
-    link: "/Events",
+    link: "https://ethsamba.org/",
   },
   {
     title: "Bamba Events Calendar",
     description:
       "Equipped with audiovisual technology, our rooms are perfect for meetings, workshops and presentations.",
     btn: "Go To Bamba Events",
-    link: "/Events",
+    link: "https://lu.ma/Bambacompany",
   },
 ];
 
@@ -31,7 +33,11 @@ const BambaEvents = () => {
               {item.description}
             </p>
           </div>
-          <div className="relative group h-[48px] cursor-pointer hover:scale-105 transition duration-300 ease-in-out">
+          <Link
+            href={item.link}
+            target="_blank"
+            className="relative group h-[48px] cursor-pointer hover:scale-105 transition duration-300 ease-in-out"
+          >
             <div
               className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out"
               style={{
@@ -41,7 +47,7 @@ const BambaEvents = () => {
             <div className="bg-rich-black text-very-light-gray rounded-full w-full h-full flex justify-center items-center px-5">
               <p className="select-none">{item.btn}</p>
             </div>
-          </div>
+          </Link>
         </div>
       ))}
     </div>
