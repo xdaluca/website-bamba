@@ -41,15 +41,15 @@ const data = [
 const OurPartners = () => {
   return (
     <div className="max-w-7xl mx-auto flex md:flex-row flex-col items-center gap-4 py-20 px-6 xl:px-0">
-      <div className="text-rich-black md:text-left text-center flex flex-col gap-4 py-10 px-6">
+      <div className="text-rich-black dark:text-[#EEEEEE] md:text-left text-center flex flex-col gap-4 py-10 px-6">
         <div className="flex flex-col gap-2">
-          <p className="text-sm">Our partners</p>
+          <p className="text-sm dark:text-[#B4B4B4]">Our partners</p>
           <h2 className="font-semibold text-2xl">
             Partnerships that elevate Web3 technology
           </h2>
         </div>
 
-        <p>
+        <p className="dark:text-[#B4B4B4]">
           Our strategic partnerships with the largest blockchain platforms allow
           us to deliver cutting-edge innovation to startups and disruptive
           projects.

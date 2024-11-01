@@ -10,14 +10,14 @@ const HeadLine = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="md:h-[616px] h-[516px] text-center flex flex-col items-center justify-center w-full max-w-7xl xl:px-0 lg:px-10 px-6 gap-8">
-        <p className="text-rich-black text-5xl md:text-[80px] font-extrabold md:leading-[80px]">
+        <p className="text-rich-black dark:text-[#EEEEEE] text-5xl md:text-[80px] font-extrabold md:leading-[80px]">
           YOUR <br />
           <span className="text-azure">LAUNCHPAD FOR</span>{" "}
           <br className="hidden md:flex" />
           <span className="text-azure">GROWTH</span> IN{" "}
           <br className="hidden md:flex" /> LATAM
         </p>
-        <p className="text-dim-gray">
+        <p className="text-dim-gray dark:text-[#B4B4B4]">
           Where innovation, startups and brilliant minds connect to transform
           the future of <br className="hidden md:flex" /> technology and crypto
           in Latin America.
@@ -30,7 +30,7 @@ const HeadLine = () => {
               boxShadow: "0px 0px 30px 10px rgba(0, 122, 255, 0.2)",
             }}
           ></div>
-          <div className="bg-rich-black text-very-light-gray rounded-full w-full h-full flex justify-center items-center">
+          <div className="bg-rich-black dark:bg-[#EEEEEE] dark:text-[#111111] text-very-light-gray rounded-full w-full h-full flex justify-center items-center">
             <p className="select-none">Learn More</p>
           </div>
         </div>
