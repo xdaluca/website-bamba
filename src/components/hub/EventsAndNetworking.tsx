@@ -99,7 +99,7 @@ const EventsAndNetworking = () => {
               }}
             ></div>
             <div className="bg-very-light-gray text-very-light-gray rounded-full w-full h-full flex justify-center items-center">
-              <p className="select-none text-rich-black">Learn More</p>
+              <p className="select-none text-rich-black">See More Events</p>
             </div>
           </Link>
         </div>

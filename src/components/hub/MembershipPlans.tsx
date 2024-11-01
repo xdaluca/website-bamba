@@ -67,15 +67,17 @@ const MembershipPlans = () => {
   };
 
   return (
-    <div className="flex justify-center flex-col items-center py-20 gap-6 text-center max-w-7xl w-full mx-auto px-6 xl:px-0">
+    <div className="flex justify-center flex-col items-center py-20 gap-8 text-center max-w-7xl w-full mx-auto px-6 xl:px-0">
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-2">
-          <p className="text-sm text-dim-gray text-center ">About Bamba Hub</p>
-          <h2 className="text-rich-black text-3xl font-semibold text-center ">
+          <p className="text-sm text-dim-gray text-center dark:text-[#B4B4B4]">
+            About Bamba Hub
+          </p>
+          <h2 className="text-rich-black text-3xl font-semibold text-center dark:text-[#EEEEEE]">
             Membership Plans
           </h2>
         </div>
-        <p className="text-dim-gray leading-6 md:w-[664px] text-center">
+        <p className="text-dim-gray leading-6 md:w-[664px] text-center dark:text-[#B4B4B4]">
           At Bamba Labs, we offer more than just a space to work—we provide
           connections, collaborations, and opportunities. Whether you’re a
           freelancer, startup, or growing company, our hub provides the perfect
