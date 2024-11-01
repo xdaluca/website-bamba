@@ -47,7 +47,7 @@ const SelectMenu = () => {
   const { width, left } = getUnderlineStyles();
 
   return (
-    <div className="relative md:flex hidden flex-row bg-[#F8F8F8] p-4 rounded-full space-x-3 overflow-hidden">
+    <div className="relative md:flex hidden flex-row bg-[#F8F8F8] dark:bg-[#191919] p-4 rounded-full space-x-3 overflow-hidden">
       <div
         className={`absolute bg-azure ${
           isAnimating ? "transition-all duration-300 ease-in-out" : "duration-0"
