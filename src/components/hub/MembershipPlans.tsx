@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const data = [
@@ -13,6 +14,7 @@ const data = [
       "Access from Monday to Friday, 8:00 AM to 18:00 PM",
       "Biometric entry",
     ],
+    link: "/Contact",
   },
   {
     name: "Day Plan",
@@ -25,6 +27,7 @@ const data = [
       "Access from Monday to Friday, 8:00 AM to 18:00 PM",
       "Biometric entry",
     ],
+    link: "/Contact",
   },
   {
     name: "Weekly Pass",
@@ -37,6 +40,7 @@ const data = [
       "Access from Monday to Friday, 8:00 AM to 18:00 PM",
       "Biometric entry",
     ],
+    link: "/Contact",
   },
   {
     name: "Fixed Desk",
@@ -51,6 +55,7 @@ const data = [
       "Exclusive offers and discounts for events",
       "Biometric entry",
     ],
+    link: "/Contact",
   },
 ];
 
@@ -99,7 +104,10 @@ const MembershipPlans = () => {
                 {item.price}
               </p>
 
-              <div className="relative group w-full h-[48px] cursor-pointer hover:scale-105 transition duration-300 ease-in-out">
+              <Link
+                href={item.link}
+                className="relative group w-full h-[48px] cursor-pointer hover:scale-105 transition duration-300 ease-in-out"
+              >
                 <div
                   className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out"
                   style={{
@@ -109,7 +117,7 @@ const MembershipPlans = () => {
                 <div className="text-rich-black bg-azure rounded-full w-full h-full flex justify-center items-center">
                   <p className="select-none">Learn More</p>
                 </div>
-              </div>
+              </Link>
 
               <button
                 className="text-light-gray mb-2 md:hidden self-center flex flex-row justify-center items-center gap-2 space-x-3"

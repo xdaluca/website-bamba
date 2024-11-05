@@ -61,7 +61,7 @@ const Space = () => {
             <div className="bg-[#21EFFF]  h-[313px] text-rich-black xl:h-full p-4 flex flex-col justify-between rounded-2xl">
               <p className="text-3xl font-semibold ">3</p>
               <div className="gap-4">
-                <p className="font-semibold text-2xl ">Booths private</p>
+                <p className="font-semibold text-2xl ">Private booths</p>
                 <p className="leading-6">
                   For those who need privacy for video calls or focused work,
                   our cabins are ideal.

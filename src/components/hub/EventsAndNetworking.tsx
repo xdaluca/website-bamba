@@ -5,28 +5,26 @@ import React from "react";
 
 const data = [
   {
-    img: "https://pt-br.learn.canva.com/wp-content/uploads/sites/9/2020/01/evento-corporativo-1.jpg",
-    title: "Builders do Rio | The Graph, Arbitrum & Chainlink",
+    img: "/imagens/hub/events/neat-day.png",
+    title: "​#NEARday",
     describe:
-      "Our space is the meeting point for builders and entrepreneurs who are shaping the future of cryptocurrencies and technology in Rio.",
+      "An event organized by @NEARDevHub where Devs learnED everything they need to build using Near protocol.",
     month: "Sep",
     day: "10",
   },
   {
-    img: "https://pt-br.learn.canva.com/wp-content/uploads/sites/9/2020/01/evento-corporativo-1.jpg",
-    title: "Builders do Rio | The Graph, Arbitrum & Chainlink",
-    describe:
-      "Our space is the meeting point for builders and entrepreneurs who are shaping the future of cryptocurrencies e tecnologia no Rio.",
-    month: "Sep",
-    day: "10",
+    img: "/imagens/hub/events/the-graph.jpg",
+    title: "Rio Builders | The Graph, Arbitrum & Chainlink br",
+    describe: "A meeting with lectures, workshops and networking!",
+    month: "Mar",
+    day: "21",
   },
   {
-    img: "https://pt-br.learn.canva.com/wp-content/uploads/sites/9/2020/01/evento-corporativo-1.jpg",
-    title: "Builders do Rio | The Graph, Arbitrum & Chainlink",
-    describe:
-      "Our space is the meeting point for builders and entrepreneurs who are shaping the future of cryptocurrencies e tecnologia no Rio.",
-    month: "Sep",
-    day: "10",
+    img: "/imagens/hub/events/blockful.jpg",
+    title: "ENS Workshop feat. Blockful | in Rio",
+    describe: "Amazing talk + workshop about ENS and its ecossystem.",
+    month: "Mar",
+    day: "20",
   },
 ];
 
