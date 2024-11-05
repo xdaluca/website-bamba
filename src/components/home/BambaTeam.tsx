@@ -41,7 +41,7 @@ const data = [
   {
     name: "Thomas Bourlon",
     position: "Co-Founder",
-    image: "/imagens/user.jpeg",
+    image: "/imagens/founders/lari.jpg",
     redes: [
       {
         src: "/imagens/redes/linkedin.png",
@@ -129,7 +129,7 @@ const BambaTeam = () => {
                   alt={item.name}
                   width={120}
                   height={120}
-                  className="rounded-full grayscale group-hover:grayscale-0 transition-all duration-300 ease-in-out"
+                  className="rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300 ease-in-out"
                 />
               </div>
 
