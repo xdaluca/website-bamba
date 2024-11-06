@@ -104,7 +104,7 @@ const Template: FC<TemplateProps> = ({ children }) => {
               <SelectMenu />
 
               <div className="hidden md:flex flex-row items-center justify-center space-x-5">
-                <div className="flex flex-row items-center justify-center space-x-1">
+                {/* <div className="flex flex-row items-center justify-center space-x-1">
                   <svg
                     width="16"
                     height="16"
@@ -146,7 +146,7 @@ const Template: FC<TemplateProps> = ({ children }) => {
                     </defs>
                   </svg>
                   <p>English</p>
-                </div>
+                </div> */}
                 <ThemeToggle />
               </div>
 

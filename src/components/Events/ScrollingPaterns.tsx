@@ -50,10 +50,10 @@ const ScrollingPatterns = () => {
           >
             <Image
               src={item}
-              width={1200}
-              height={600}
+              width={600}
+              height={400}
               alt={`Imagem ${index}`}
-              className="w-auto h-auto max-w-full min-w-[200px] min-h-[100px]  object-contain"
+              className="w-auto h-auto max-w-full min-w-[50px] min-h-[40px]  object-contain"
             />
           </div>
         ))}
