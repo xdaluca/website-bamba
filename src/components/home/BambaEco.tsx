@@ -4,16 +4,23 @@ const data = [
   {
     title: "Hub",
     description:
-      "Our space is the meeting point for builders and who are shaping the future of cryptocurrencies and technology in Rio.",
+      "Located in Ipanema, just 2 minutes from the beach, it offers everything you need to stay productive.",
     bg: "bg-[#E1EFFF]",
-    link: "/Hub",
+    link: "/Cowork",
   },
   {
     title: "Events",
     description:
-      "Hackathons and meetups that accelerate ideas and connect innovative minds to create solutions ecosystem.",
+      "Hackathons, meetups, and workshops that bring the community together and fuel the next wave of builders and apps from Rio.",
     bg: "bg-azure",
     link: "/Events",
+  },
+  {
+    title: "Studio",
+    description:
+      "Our in-house dev and marketing studio offers end-to-end solutions for projects of all size.",
+    bg: "bg-[#E1EFFF]",
+    link: "/Studio",
   },
 ];
 
@@ -27,13 +34,6 @@ const BambaEco = () => {
         className="max-w-7xl mx-auto flex flex-col items-center justify-center bg-rich-black px-6 gap-8 rounded-2xl py-20"
         style={{ boxShadow: "0px -40px 160px 0px #007AFF29" }}
       >
-        <div className="flex flex-col gap-2">
-          <p className="text-azure text-sm text-center">Bamba Ecossystem</p>
-          <p className="text-center text-very-light-gray font-semibold text-2xl leading-8">
-            Our Ecosystem: Innovation, <br className="hidden md:flex" />{" "}
-            Technology and Collaboration
-          </p>
-        </div>
         <div className="flex flex-wrap justify-center gap-6">
           {data.map((item) => (
             <div

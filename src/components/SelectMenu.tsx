@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 
 export const menu = [
   { name: "Home", link: "/" },
-  { name: "Hub", link: "/Hub" },
+  { name: "Cowork", link: "/Cowork" },
   { name: "Events", link: "/Events" },
+  { name: "Studio", link: "/Studio" },
 ];
 
 const SelectMenu = () => {
