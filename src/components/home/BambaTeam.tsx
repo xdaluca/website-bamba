@@ -22,7 +22,7 @@ const data = [
     ],
   },
   {
-    name: "Antônio Carneiro",
+    name: "Antonio Carneiro",
     position: "Co-Founder",
     image: "/imagens/user.jpeg",
     redes: [
@@ -41,7 +41,7 @@ const data = [
   {
     name: "Thomas Bourlon",
     position: "Co-Founder",
-    image: "/imagens/founders/lari.jpg",
+    image: "/imagens/founders/thomas.jpg",
     redes: [
       {
         src: "/imagens/redes/linkedin.png",
@@ -51,8 +51,8 @@ const data = [
     ],
   },
   {
-    name: "Vinicius Santos",
-    position: "Developer Relations",
+    name: "Felipe Dev",
+    position: "Full-Stack Developer",
     image: "/imagens/user.jpeg",
     redes: [
       {
@@ -64,7 +64,7 @@ const data = [
   },
   {
     name: "Larissa Freitas",
-    position: "Hub & Events Lead",
+    position: "Community & Events Manager",
     image: "/imagens/user.jpeg",
     redes: [
       {
@@ -88,19 +88,10 @@ const BambaTeam = () => {
       <div className="flex flex-col md:flex-row gap-16  bg-rich-black rounded-2xl text-center md:text-left py-20 xl:px-0 px-6 relative">
         <div className="flex-1 gap-4 flex flex-col justify-center px-14">
           <div className="flex flex-col gap-2">
-            <p className="text-sm text-light-gray dark:text-[#B4B4B4]">
-              Bamba Team
-            </p>
-            <h2 className="text-2xl font-semibold leading-8 text-[#F6F7F6]">
-              Bamba Team: Innovation in every detail
+            <h2 className="text-4xl font-semibold leading-8 text-[#F6F7F6]">
+              A Team of Bambas
             </h2>
           </div>
-          <p className="text-light-gray gap-6 leading-6 dark:text-[#B4B4B4]">
-            Meet the visionaries leading Bamba Labs. With a unique blend of
-            experience and passion, our leadership team is shaping the future of
-            innovation and technology, driving the transformation of Rio de
-            Janeiro into the epicenter of entrepreneurship in Latin America.
-          </p>
         </div>
         <div
           className="overflow-x-auto flex md:grid gap-8 md:grid-cols-2 lg:grid-cols-3 p-4"

@@ -40,15 +40,12 @@ const AboutBambaEvents = () => {
       <div className="text-center flex flex-col items-center justify-center max-w-7xl w-full py-20 xl:px-0 px-6 gap-8">
         <div className="gap-4 flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center items-center gap-2">
-            <p className="text-light-gray text-sm">About Bamba Events</p>
             <h2 className="text-very-light-gray text-3xl font-semibold">
               Chainlink, The Graph and Arbitrum
             </h2>
           </div>
           <p className="leading-6 text-light-gray md:w-[664px]">
-            Bamba Labs is your go-to ecosystem with coworking, an agency,
-            builders club, and epic events—all designed to spark innovation,
-            build community, and launch startups in crypto and tech.
+            March 2024
           </p>
         </div>
         <div className="flex justify-center items-center rounded-2xl max-w-7xl w-full bg-dim-gray relative overflow-hidden">
