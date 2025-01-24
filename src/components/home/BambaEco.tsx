@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const data = [
   {
-    title: "Hub",
+    title: "Cowork",
     description:
       "Located in Ipanema, just 2 minutes from the beach, it offers everything you need to stay productive.",
     bg: "bg-[#E1EFFF]",
