@@ -7,7 +7,7 @@ const data = [
   {
     name: "Luca Cosivi",
     position: "Co-Founder",
-    image: "/imagens/user.jpeg",
+    image: "/imagens/founders/luca-cosivi.png",
     redes: [
       {
         src: "/imagens/redes/linkedin.png",
@@ -24,7 +24,7 @@ const data = [
   {
     name: "Antonio Carneiro",
     position: "Co-Founder",
-    image: "/imagens/user.jpeg",
+    image: "/imagens/founders/antonio-carneiro.png",
     redes: [
       {
         src: "/imagens/redes/linkedin.png",
@@ -41,7 +41,7 @@ const data = [
   {
     name: "Thomas Bourlon",
     position: "Co-Founder",
-    image: "/imagens/founders/thomas.jpg",
+    image: "/imagens/founders/thomas-bourlon.jpg",
     redes: [
       {
         src: "/imagens/redes/linkedin.png",
@@ -51,40 +51,40 @@ const data = [
     ],
   },
   {
-    name: "Felipe Dev",
+    name: "Felipe Nunes",
     position: "Full-Stack Developer",
     image: "/imagens/user.jpeg",
     redes: [
       {
         src: "/imagens/redes/linkedin.png",
         alt: "LinkedIn",
-        link: "https://www.linkedin.com/in/vinicius-santos101/",
+        link: "https://www.linkedin.com/in/devfelipenunes/",
       },
     ],
   },
   {
     name: "Larissa Freitas",
     position: "Community & Events Manager",
-    image: "/imagens/user.jpeg",
+    image: "/imagens/founders/larissa-freitas.png",
     redes: [
       {
         src: "/imagens/redes/linkedin.png",
         alt: "LinkedIn",
-        link: "https://www.linkedin.com/in/larissa-freitas-03b228295/",
+        link: "https://www.linkedin.com/in/manoela-franco-araujo-3b2670103/",
       },
     ],
   },
   {
     name: "Manoela Franco",
     position: "General Counsel",
-    image: "/imagens/user.jpeg",
+    image: "/imagens/founders/manoela-franco.png",
     redes: [{ src: "/imagens/redes/linkedin.png", alt: "LinkedIn", link: "" }],
   },
 ];
 
 const BambaTeam = () => {
   return (
-    <div className="max-w-7xl mx-auto w-full xl:px-0 px-6 mb-[450px]">
+    <div className="max-w-7xl mx-auto w-full xl:px-0 px-6 mb-20">
       <div className="flex flex-col md:flex-row gap-16  bg-rich-black rounded-2xl text-center md:text-left py-20 xl:px-0 px-6 relative">
         <div className="flex-1 gap-4 flex flex-col justify-center px-14">
           <div className="flex flex-col gap-2">
@@ -107,7 +107,7 @@ const BambaTeam = () => {
               className="p-6 rounded-lg flex-shrink-0 group flex flex-col justify-center items-center relative"
               style={{ flex: "0 0 auto" }}
             >
-              <div className="relative ">
+              <div className="relative w-[120px] h-[120px] rounded-full overflow-hidden flex justify-center items-center">
                 <div
                   className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300 ease-in-out"
                   style={{
@@ -120,7 +120,7 @@ const BambaTeam = () => {
                   alt={item.name}
                   width={120}
                   height={120}
-                  className="rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300 ease-in-out"
+                  className="object-cover h-full grayscale group-hover:grayscale-0 transition-all duration-300 ease-in-out"
                 />
               </div>
 
@@ -128,7 +128,7 @@ const BambaTeam = () => {
                 {item.name}
               </h4>
 
-              <p className="text-[#858585] group-hover:text-white transition-all duration-300 ease-in-out">
+              <p className="text-[#858585] text-center group-hover:text-white transition-all duration-300 ease-in-out">
                 {item.position}
               </p>
 
