@@ -36,7 +36,7 @@ const AboutBambaEvents = () => {
   };
 
   return (
-    <div className="flex justify-center bg-rich-black mb-80">
+    <div className="flex justify-center bg-rich-black">
       <div className="text-center flex flex-col items-center justify-center max-w-7xl w-full py-20 xl:px-0 px-6 gap-8">
         <div className="gap-4 flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center items-center gap-2">
@@ -44,9 +44,7 @@ const AboutBambaEvents = () => {
               Chainlink, The Graph and Arbitrum
             </h2>
           </div>
-          <p className="leading-6 text-light-gray md:w-[664px]">
-            March 2024
-          </p>
+          <p className="leading-6 text-light-gray md:w-[664px]">March 2024</p>
         </div>
         <div className="flex justify-center items-center rounded-2xl max-w-7xl w-full bg-dim-gray relative overflow-hidden">
           <div
