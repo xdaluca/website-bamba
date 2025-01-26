@@ -4,7 +4,15 @@ const HeadLine = () => {
   const handleScroll = () => {
     const targetElement = document.getElementById("bamba-eco");
     if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" });
+      const offset = 150;
+      const elementPosition =
+        targetElement.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   };
 
@@ -14,10 +22,12 @@ const HeadLine = () => {
         <p className="text-rich-black dark:text-[#EEEEEE] text-5xl md:text-[80px] font-extrabold md:leading-[80px]">
           Where Rio’s 🇧🇷 Builders
           <br />
-          <span className="text-azure">Cowork,</span> Create, <span className="text-azure">and Grow.</span>
+          <span className="text-azure">Cowork,</span> Create,{" "}
+          <span className="text-azure">and Grow.</span>
         </p>
         <p className="text-dim-gray dark:text-[#B4B4B4]">
-          Cowork, events, and a full-service dev &amp; marketing studio—all under one roof.
+          Cowork, events, and a full-service dev &amp; marketing studio—all
+          under one roof.
         </p>
         <div className="relative group w-full md:w-[166px] h-[48px] cursor-pointer hover:scale-105 transition duration-300 ease-in-out">
           <div
