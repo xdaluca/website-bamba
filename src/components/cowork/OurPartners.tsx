@@ -16,7 +16,7 @@ const data = [
 
 const OurPartners = () => {
   return (
-    <div className="max-w-7xl mx-auto md:h-[791px] flex md:flex-row flex-col items-center px-6 text-center md:text-left xl:px-0 gap-8 mb-20">
+    <div className="max-w-7xl mx-auto md:h-[400px] flex md:flex-row flex-col items-center px-6 text-center md:text-left xl:px-0 gap-8 mb-20">
       <div className="w-full lg:w-1/2 flex flex-col gap-6 px-6">
         <div className="flex flex-col gap-2">
           <h2 className="text-3xl font-semibold text-rich-black dark:text-[#EEEEEE]">
@@ -24,7 +24,7 @@ const OurPartners = () => {
           </h2>
         </div>
       </div>
-      <div className="bg-azure w-full lg:w-1/2 h-[631px] flex flex-col items-center justify-center rounded-2xl md:py-0 py-10">
+      <div className="bg-azure w-full lg:w-1/2 h-[400px] flex flex-col items-center justify-center rounded-2xl md:py-0 py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {data.map((item, index) => (
             <Link
@@ -37,7 +37,7 @@ const OurPartners = () => {
                 alt={`Partner ${index + 1}`}
                 width={130}
                 height={56}
-                className={`h-auto max-w-[160px] object-contain transition duration-300 ease-in-out group-hover:invert hover:scale-105`}
+                className={`h-auto w-[200px] object-contain transition duration-300 ease-in-out group-hover:invert hover:scale-105`}
               />
             </Link>
           ))}

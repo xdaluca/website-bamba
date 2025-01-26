@@ -11,7 +11,7 @@ const data = [
       "Use of a shared table (non-fixed)",
       "Access from Monday to Friday, 8:00 AM to 18:00 PM",
     ],
-    link: "/Contact",
+    link: "https://wa.me/5521990916839",
   },
   {
     name: "5-day Plan",
@@ -22,7 +22,7 @@ const data = [
       "Access from Monday to Friday, 8:00 AM to 18:00 PM",
       "Biometric entry",
     ],
-    link: "/Contact",
+    link: "https://wa.me/5521990916839",
   },
   {
     name: "10-Day Plan",
@@ -33,7 +33,7 @@ const data = [
       "Access from Monday to Friday, 8:00 AM to 18:00 PM",
       "Biometric entry",
     ],
-    link: "/Contact",
+    link: "https://wa.me/5521990916839",
   },
   {
     name: "Fixed Resident Desk",
@@ -46,7 +46,7 @@ const data = [
       "Exclusive offers and discounts for events",
       "Biometric entry",
     ],
-    link: "/Contact",
+    link: "https://wa.me/5521990916839",
   },
 ];
 
@@ -87,6 +87,7 @@ const MembershipPlans = () => {
               </p>
 
               <Link
+                target="_blank"
                 href={item.link}
                 className="relative group w-full h-[48px] cursor-pointer hover:scale-105 transition duration-300 ease-in-out"
               >

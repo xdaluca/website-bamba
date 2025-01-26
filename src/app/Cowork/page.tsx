@@ -18,7 +18,7 @@ const Hub = () => {
       <Space />
       <OurPartners />
       <MembershipPlans />
-      <EventsAndNetworking />
+      {/* <EventsAndNetworking /> */}
     </Template>
   );
 };
