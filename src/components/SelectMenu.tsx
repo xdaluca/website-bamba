@@ -25,23 +25,28 @@ const SelectMenu = () => {
     const index = menu.findIndex((item) => item.link === link);
     const totalLinks = menu.length;
 
-    const adjustedWidth1 = `${(100 / totalLinks) * 1.2}%`;
-    const adjustedWidth2 = `${(100 / totalLinks) * 0.94}%`;
-    const adjustedWidth = `${(100 / totalLinks) * 1.13}%`;
-    return {
-      width:
-        index === 0
-          ? adjustedWidth1
-          : index === 1
-          ? adjustedWidth2
-          : index === 2
-          ? adjustedWidth
-          : "20%",
+    const widthMap = {
+      0: 1.13,
+      1: 0.94,
+      2: 0.97,
+      3: 1.04,
+    };
 
-      left:
-        index === 0 || index === 1
-          ? `${(index / totalLinks) * 100 + 6 / totalLinks}%`
-          : `${(index / totalLinks) * 100 - 18 / totalLinks}%`,
+    const adjustedWidth = `${(100 / totalLinks) * (widthMap[index] || 0.2)}%`;
+
+    const offsets = {
+      0: 6,
+      1: 11,
+      2: 3,
+      3: -10,
+    };
+
+    const leftOffset = offsets[index] !== undefined ? offsets[index] : -18;
+    const left = `${(index / totalLinks) * 100 + leftOffset / totalLinks}%`;
+
+    return {
+      width: adjustedWidth,
+      left,
     };
   };
 
