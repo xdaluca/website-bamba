@@ -6,6 +6,8 @@ const data = [
   {
     name: "Daily Pass",
     price: "R$150",
+    description:
+      "Ideal for those needing a comfortable, equipped space for a day.",
     benefits: [
       "Access to the space for one day",
       "Use of a shared table (non-fixed)",
@@ -16,6 +18,8 @@ const data = [
   {
     name: "5-day Plan",
     price: "R$315",
+    description:
+      "Perfect for those needing flexibility and occasional use of the space.",
     benefits: [
       "Access to the space for 5 days during the month",
       "Use of a shared table (non-fixed)",
@@ -27,6 +31,8 @@ const data = [
   {
     name: "10-Day Plan",
     price: "R$595",
+    description:
+      "A great choice for those who need a regular, but not daily, workspace.",
     benefits: [
       "Access to the space for 10 days during the month",
       "Use of a shared table (non-fixed)",
@@ -38,6 +44,8 @@ const data = [
   {
     name: "Fixed Resident Desk",
     price: "R$1500",
+    description:
+      "The best option for those needing an exclusive, guaranteed space daily.",
     benefits: [
       "Access anytime, anyday (24/7)",
       "Customize your table",

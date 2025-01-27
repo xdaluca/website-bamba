@@ -1,6 +1,5 @@
 import { Template } from "@/components";
 import {
-  EventsAndNetworking,
   HeadLineHub,
   MembershipPlans,
   OurPartners,

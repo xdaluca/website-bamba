@@ -8,11 +8,11 @@ const Space = () => {
       <div className="grid grid-rows-[auto,1fr] gap-4">
         {/* Top Image */}
         <Image
-          src="/imagens/CardPages.png"
+          src="/imagens/cowork/bamba-cowork-1.jpg"
           alt="Coworking Space"
           width={1280}
           height={300}
-          className="object-cover"
+          className="object-cover w-[1280px] h-[250px] rounded-2xl"
         />
 
         {/* Bottom Left Blocks */}
@@ -91,11 +91,11 @@ const Space = () => {
 
         {/* Bottom Image */}
         <Image
-          src="/imagens/CardPages2.png"
+          src="/imagens/cowork/bamba-cowork-2.jpg"
           alt="Coworking Space - Another View"
           width={1280}
           height={300}
-          className="object-cover"
+          className="object-cover w-[1280px] h-[250px] rounded-2xl"
         />
       </div>
     </div>
