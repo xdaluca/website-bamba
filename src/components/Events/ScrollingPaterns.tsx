@@ -15,28 +15,33 @@ const data = [
 
 const ScrollingPatterns = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null);
+  const animationRef = useRef<number | null>(null);
 
   useEffect(() => {
     const scrollContainer = scrollRef.current;
+    const scrollSpeed = 1;
 
-    const step = 1;
     const scroll = () => {
       if (scrollContainer) {
         if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
           scrollContainer.scrollLeft = 0;
         } else {
-          scrollContainer.scrollLeft += step;
+          scrollContainer.scrollLeft += scrollSpeed;
         }
       }
+      animationRef.current = requestAnimationFrame(scroll);
     };
 
-    const intervalId = setInterval(scroll, 20);
-    return () => clearInterval(intervalId);
+    animationRef.current = requestAnimationFrame(scroll);
+
+    return () => {
+      if (animationRef.current) cancelAnimationFrame(animationRef.current);
+    };
   }, []);
 
   return (
     <div
-      className="w-full overflow-hidden relative"
+      className="w-full overflow-hidden relative h-full"
       ref={scrollRef}
     >
       <div
@@ -53,7 +58,7 @@ const ScrollingPatterns = () => {
               width={600}
               height={400}
               alt={`Imagem ${index}`}
-              className="w-auto h-auto max-w-full min-w-[50px] min-h-[40px]  object-contain"
+              className="w-auto h-full max-w-full min-w-[50px] min-h-[40px] object-contain"
             />
           </div>
         ))}
