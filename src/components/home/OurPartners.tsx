@@ -25,7 +25,7 @@ const data = [
     link: "https://near.org/",
   },
   {
-    img: "/imagens/partners/partners6.png",
+    img: "/imagens/partners/ethereum-foundation.webp",
     link: "https://ethereum.org/en/",
   },
   {
@@ -47,8 +47,8 @@ const OurPartners = () => {
         </div>
 
         <p className="dark:text-[#B4B4B4]">
-          Bamba's events have been sponsored by some of the leading companies in
-          web3 and emerging technologies.
+          Bamba&apos;s events have been sponsored by some of the leading
+          companies in web3 and emerging technologies.
         </p>
 
         <div className="relative group w-full md:w-[166px] h-[48px] cursor-pointer hover:scale-105 transition duration-300 ease-in-out">
@@ -68,14 +68,14 @@ const OurPartners = () => {
               target="_blank"
               href={item.link}
               key={index}
-              className="flex justify-center bg-rich-black rounded-full transition duration-300 ease-in-out hover:bg-very-light-gray hover:scale-105 cursor-pointer"
+              className="flex justify-center bg-rich-black rounded-full transition duration-300 ease-in-out hover:bg-very-light-gray hover:scale-105 cursor-pointer h-[56px] items-center p-5"
             >
               <Image
                 src={item.img}
                 alt={`Partner ${index + 1}`}
                 width={130}
                 height={56}
-                className="h-auto w-[200px] object-contain transition duration-300 ease-in-out hover:filter hover:brightness-0"
+                className="h-auto w-[200px] transition duration-300 ease-in-out hover:filter hover:brightness-0"
               />
             </Link>
           ))}
