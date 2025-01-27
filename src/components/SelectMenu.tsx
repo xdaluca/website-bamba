@@ -25,7 +25,7 @@ const SelectMenu = () => {
     const index = menu.findIndex((item) => item.link === link);
     const totalLinks = menu.length;
 
-    const widthMap = {
+    const widthMap: Record<number, number> = {
       0: 1.13,
       1: 0.94,
       2: 0.97,
@@ -34,7 +34,7 @@ const SelectMenu = () => {
 
     const adjustedWidth = `${(100 / totalLinks) * (widthMap[index] || 0.2)}%`;
 
-    const offsets = {
+    const offsets: Record<number, number> = {
       0: 6,
       1: 11,
       2: 3,
