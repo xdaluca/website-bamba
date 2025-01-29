@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const data = [
@@ -7,6 +8,7 @@ const data = [
       "A welcoming space to take a break, grab a coffee or snack, and connect with other members.",
     btn: "Go To ETHSamba",
     link: "https://ethsamba.org/",
+    content: "/imagens/ethSamba-main-logo.png",
   },
   {
     title: "Bamba Events Calendar",
@@ -94,7 +96,19 @@ const BambaEvents = () => {
           key={index}
         >
           <div className="flex flex-col gap-4">
-            <div className="mb-4">{item.content}</div>
+            <div>
+              {typeof item.content === "string" ? (
+                <Image
+                  className="justify-self-center"
+                  src={item.content}
+                  alt={item.title}
+                  width={130}
+                  height={50}
+                />
+              ) : (
+                item.content
+              )}
+            </div>
             <p className="text-rich-black text-2xl font-semibold">
               {item.title}
             </p>

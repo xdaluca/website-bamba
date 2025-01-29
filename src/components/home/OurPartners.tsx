@@ -68,7 +68,9 @@ const OurPartners = () => {
               target="_blank"
               href={item.link}
               key={index}
-              className="flex justify-center bg-rich-black rounded-full transition duration-300 ease-in-out hover:bg-very-light-gray hover:scale-105 cursor-pointer h-[56px] items-center p-5"
+              className={`flex justify-center bg-rich-black rounded-full transition duration-300 ease-in-out hover:bg-very-light-gray hover:scale-105 cursor-pointer h-[90px] md:h-[56px] items-center ${
+                index === 5 ? "p-5" : ""
+              }`}
             >
               <Image
                 src={item.img}
