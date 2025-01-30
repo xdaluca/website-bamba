@@ -62,21 +62,21 @@ const OurPartners = () => {
         </div>
       </div>
       <div className="bg-azure w-full py-10 px-6 rounded-3xl md:h-[631px] justify-center flex items-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
           {data.map((item, index) => (
             <Link
               target="_blank"
               href={item.link}
               key={index}
-              className={`flex justify-center bg-rich-black hover:bg-slate-50 rounded-full transition duration-300 ease-in-out  hover:scale-105 cursor-pointer h-[90px] md:h-[56px] items-center ${
+              className={`flex justify-center bg-rich-black hover:bg-slate-50 rounded-full transition duration-300 ease-in-out  hover:scale-105 cursor-pointer h-[90px] md:h-[90px] items-center ${
                 index === 5 ? "p-5" : ""
               }`}
             >
-              <div className="relative flex justify-center h-auto w-[200px] transition duration-300 ease-in-out hover:filter hover:brightness-200 hover:invert">
+              <div className="relative flex justify-center h-auto w-[250px] transition duration-300 ease-in-out hover:filter hover:brightness-200 hover:invert">
                 <Image
                   src={item.img}
                   alt={`Partner ${index + 1}`}
-                  width={130}
+                  width={200}
                   height={56}
                   className="object-contain hover:filter hover:brightness-200 hover:invert"
                   style={{ filter: "brightness(0) invert(1)" }}
