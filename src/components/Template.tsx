@@ -32,8 +32,9 @@ const Template: FC<TemplateProps> = ({ children }) => {
           <div className="relative flex items-center justify-between">
             <div className="flex items-center justify-between w-full">
               <a
+                aria-label="Home"
                 href="/"
-                className="flex flex-row items-center justify-center space-x-1 "
+                className="flex flex-row items-center justify-center space-x-1 px-3"
               >
                 <svg
                   width="31"
@@ -103,7 +104,7 @@ const Template: FC<TemplateProps> = ({ children }) => {
 
               <SelectMenu />
 
-              <div className="hidden md:flex flex-row items-center justify-center space-x-5">
+              <div className="flex flex-row items-center justify-center space-x-5">
                 {/* <div className="flex flex-row items-center justify-center space-x-1">
                   <svg
                     width="16"
@@ -148,77 +149,78 @@ const Template: FC<TemplateProps> = ({ children }) => {
                   <p>English</p>
                 </div> */}
                 <ThemeToggle />
-              </div>
 
-              <button
-                onClick={toggleSidebar}
-                aria-controls="logo-sidebar"
-                type="button"
-                className="inline-flex items-center rounded-lg font-semibold p-2 text-sm md:hidden"
-              >
-                <div>
-                  {!isSidebarOpen ? (
-                    <svg
-                      className={`transition-transform duration-300 ease-in-out ${
-                        isSidebarOpen ? "rotate-180" : ""
-                      } fill-current text-gray-900 dark:text-white`}
-                      width="24"
-                      height="25"
-                      viewBox="0 0 24 25"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4 12.0938H20"
-                        stroke="currentColor"
-                        strokeWidth="1.25"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M4 6.09375H20"
-                        stroke="currentColor"
-                        strokeWidth="1.25"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M4 18.0938H20"
-                        stroke="currentColor"
-                        strokeWidth="1.25"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  ) : (
-                    <svg
-                      className={`transition-transform duration-300 ease-in-out ${
-                        isSidebarOpen ? "rotate-180" : ""
-                      } fill-current text-gray-900 dark:text-white`}
-                      width="24"
-                      height="25"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M24 8L8 24"
-                        stroke="currentColor"
-                        strokeWidth="1.25"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M8 8L24 24"
-                        stroke="currentColor"
-                        strokeWidth="1.25"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  )}
-                </div>
-              </button>
+                <button
+                  onClick={toggleSidebar}
+                  aria-controls="logo-sidebar"
+                  aria-label="Toggle Sidebar"
+                  type="button"
+                  className="inline-flex items-center rounded-lg font-semibold p-2 text-sm md:hidden"
+                >
+                  <div>
+                    {!isSidebarOpen ? (
+                      <svg
+                        className={`transition-transform duration-300 ease-in-out ${
+                          isSidebarOpen ? "rotate-180" : ""
+                        } fill-current text-gray-900 dark:text-white`}
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4 12.0938H20"
+                          stroke="currentColor"
+                          strokeWidth="1.25"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M4 6.09375H20"
+                          stroke="currentColor"
+                          strokeWidth="1.25"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M4 18.0938H20"
+                          stroke="currentColor"
+                          strokeWidth="1.25"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    ) : (
+                      <svg
+                        className={`transition-transform duration-300 ease-in-out ${
+                          isSidebarOpen ? "rotate-180" : ""
+                        } fill-current text-gray-900 dark:text-white`}
+                        width="24"
+                        height="25"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24 8L8 24"
+                          stroke="currentColor"
+                          strokeWidth="1.25"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M8 8L24 24"
+                          stroke="currentColor"
+                          strokeWidth="1.25"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    )}
+                  </div>
+                </button>
+              </div>
             </div>
           </div>
         </div>

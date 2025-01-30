@@ -18,7 +18,7 @@ const Space = () => {
         {/* Bottom Left Blocks */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {/* 5 Meeting Rooms */}
-          <div className="md:h-[450px] h-[313px] bg-[#E1EFFF] p-4 flex flex-col justify-between rounded-2xl">
+          <div className="md:h-[450px] h-[200px] bg-[#E1EFFF] p-4 flex flex-col justify-between rounded-2xl">
             <p className="text-3xl font-semibold text-rich-black">
               5 Meeting Rooms
             </p>
@@ -31,7 +31,7 @@ const Space = () => {
           </div>
 
           {/* 3 Private Booths */}
-          <div className="md:h-[450px] h-[313px] bg-[#E1EFFF] p-4 flex flex-col justify-between rounded-2xl">
+          <div className="md:h-[450px] h-[200px] bg-[#E1EFFF] p-4 flex flex-col justify-between rounded-2xl">
             <p className="text-3xl font-semibold text-rich-black">
               3 Private Booths
             </p>
@@ -50,7 +50,7 @@ const Space = () => {
         {/* Top Right Blocks */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {/* 49 Desks */}
-          <div className="md:h-[450px] h-[313px] bg-rich-black p-4 flex flex-col justify-between rounded-2xl">
+          <div className="md:h-[450px] h-[200px] bg-rich-black p-4 flex flex-col justify-between rounded-2xl">
             <p className="text-3xl font-semibold text-[#F7F7F6]">49 Desks</p>
             <div className="gap-4">
               <p className="font-semibold text-2xl text-[#F7F7F6]">
@@ -66,7 +66,7 @@ const Space = () => {
           {/* Chill Area & 2 Min Away */}
           <div className="grid grid-rows-2 gap-4">
             {/* Chill Area */}
-            <div className="bg-[#21EFFF] h-[313px] text-rich-black xl:h-full p-4 flex flex-col justify-between rounded-2xl">
+            <div className="bg-[#21EFFF] h-[200px] text-rich-black xl:h-full p-4 flex flex-col justify-between rounded-2xl">
               <p className="text-3xl font-semibold">Chill Area</p>
               <div className="gap-4">
                 <p className="text-rich-black leading-6">
@@ -77,7 +77,7 @@ const Space = () => {
             </div>
 
             {/* 2 Min Away from Ipanema Beach */}
-            <div className="bg-[#E1EFFF] text-rich-black h-[313px] xl:h-full p-4 flex flex-col justify-between rounded-2xl">
+            <div className="bg-[#E1EFFF] text-rich-black h-[200px] xl:h-full p-4 flex flex-col justify-between rounded-2xl">
               <p className="text-3xl font-semibold">2 Min from Ipanema Beach</p>
               <div className="gap-4">
                 <p className="leading-6">

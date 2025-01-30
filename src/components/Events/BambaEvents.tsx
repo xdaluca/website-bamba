@@ -49,8 +49,8 @@ const data = [
           />
         </svg>
         <svg
-          width="78"
-          height="22"
+          width="120"
+          height="50"
           viewBox="0 0 78 22"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ const data = [
 
 const BambaEvents = () => {
   return (
-    <div className="max-w-7xl mx-auto w-full gap-4 flex flex-col xl:flex-row justify-between text-center xl:px-0 lg:px-10 px-6 pb-20">
+    <div className="max-w-7xl mx-auto w-full gap-10 flex flex-col xl:flex-row justify-between text-center xl:px-0 lg:px-10 px-6">
       {data.map((item, index) => (
         <div
           className="h-[400px] bg-azure rounded-2xl w-full flex flex-col items-center justify-center gap-6 p-6"

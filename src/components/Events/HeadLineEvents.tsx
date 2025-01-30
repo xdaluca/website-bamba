@@ -7,7 +7,8 @@ const HeadLineEvents = () => {
         </h2>
       </div>
       <p className="text-dim-gray dark:text-[#B4B4B4] leading-6 md:w-[664px]">
-        Organizers of the yearly ETHSamba Hackathon and unique builder focused events at Bamba Cowork.
+        Organizers of the yearly ETHSamba Hackathon and unique builder focused
+        events at Bamba Cowork.
       </p>
     </div>
   );
