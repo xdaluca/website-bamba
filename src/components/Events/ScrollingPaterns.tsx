@@ -58,7 +58,8 @@ const ScrollingPatterns = () => {
               width={600}
               height={400}
               alt={`Imagem ${index}`}
-              className="w-auto h-full max-w-full min-w-[50px] min-h-[40px] object-contain"
+              className="w-auto h-full max-w-full min-w-[200px] min-h-[40px] object-contain"
+              style={{ filter: "brightness(0) invert(1)" }}
             />
           </div>
         ))}

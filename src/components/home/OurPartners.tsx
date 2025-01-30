@@ -68,17 +68,20 @@ const OurPartners = () => {
               target="_blank"
               href={item.link}
               key={index}
-              className={`flex justify-center bg-rich-black rounded-full transition duration-300 ease-in-out hover:bg-very-light-gray hover:scale-105 cursor-pointer h-[90px] md:h-[56px] items-center ${
+              className={`flex justify-center bg-rich-black hover:bg-slate-50 rounded-full transition duration-300 ease-in-out  hover:scale-105 cursor-pointer h-[90px] md:h-[56px] items-center ${
                 index === 5 ? "p-5" : ""
               }`}
             >
-              <Image
-                src={item.img}
-                alt={`Partner ${index + 1}`}
-                width={130}
-                height={56}
-                className="h-auto w-[200px] transition duration-300 ease-in-out hover:filter hover:brightness-0"
-              />
+              <div className="relative flex justify-center h-auto w-[200px] transition duration-300 ease-in-out hover:filter hover:brightness-200 hover:invert">
+                <Image
+                  src={item.img}
+                  alt={`Partner ${index + 1}`}
+                  width={130}
+                  height={56}
+                  className="object-contain hover:filter hover:brightness-200 hover:invert"
+                  style={{ filter: "brightness(0) invert(1)" }}
+                />
+              </div>
             </Link>
           ))}
         </div>

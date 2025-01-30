@@ -16,7 +16,7 @@ const data = [
 
 const OurPartners = () => {
   return (
-    <div className="max-w-7xl mx-auto md:h-[400px] flex md:flex-row flex-col items-center px-6 text-center md:text-left xl:px-0 gap-8 mb-20">
+    <div className="max-w-7xl mx-auto md:h-[400px] flex md:flex-row flex-col items-center px-6 text-center md:text-left xl:px-0 gap-8">
       <div className="w-full lg:w-1/2 flex flex-col gap-6 px-6">
         <div className="flex flex-col gap-2">
           <h2 className="text-3xl font-semibold text-rich-black dark:text-[#EEEEEE]">
@@ -30,7 +30,7 @@ const OurPartners = () => {
             <Link
               key={index}
               href={item.link}
-              className="group flex justify-center cursor-pointer"
+              className="group flex justify-center cursor-pointer bg-white hover:bg-black rounded-full "
             >
               <Image
                 src={item.img}
