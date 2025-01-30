@@ -9,7 +9,7 @@ const data = [
   },
   {
     img: "/imagens/partners/partners11.png",
-    link: "https://www.tripflip.com.br/en/",
+    link: "https://www.tripflip.com.br/",
   },
   { img: "/imagens/partners/partners12.png", link: "https://y5.systems/" },
 ];
